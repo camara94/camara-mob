@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Icon(Icons.add_alarm, size: 60.0,),
