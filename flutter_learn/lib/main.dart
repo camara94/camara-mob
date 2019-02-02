@@ -44,17 +44,15 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Container(
-          width: 300.0,
-          height: 250.0,
-          decoration: BoxDecoration(
-            border: Border.all(width: 2.0),
-
-          ),
-          child: image,
-        ),
-      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Icon(Icons.add_alarm, size: 60.0,),
+          Text('Alarme',style: TextStyle(fontSize:20.0),),
+          Icon(Icons.add_shopping_cart, size: 60.0,),
+          Text('Do shopping', style: TextStyle(fontSize:20.0),),
+        ],
+      )
     );
   }
 }
