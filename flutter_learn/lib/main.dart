@@ -44,15 +44,25 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: ListView(
         children: <Widget>[
-          Icon(Icons.add_alarm, size: 60.0,),
-          Text('Alarme',style: TextStyle(fontSize:20.0),),
-          Icon(Icons.add_shopping_cart, size: 60.0,),
-          Text('Do shopping', style: TextStyle(fontSize:20.0),),
+          ListTile(
+            leading: Icon(Icons.map),
+            title:Text('Map'),
+            onTap: (){print('Map');},
+          ),
+          ListTile(
+            leading:  Icon(Icons.search),
+            title:Text('Search'),
+            onTap:(){print('Search');}
+          ),
+          ListTile(
+            leading: Icon(Icons.select_all),
+            title: Text('Select All'),
+            onTap: (){print('Select all');}
+          ),
         ],
-      )
+      ),
     );
   }
 }
