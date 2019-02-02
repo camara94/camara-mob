@@ -64,13 +64,13 @@ class Home extends StatelessWidget {
           )
         ],
       ),
-      body: ListView.builder(
-        itemCount: content.length,
-        itemBuilder: (BuildContext context, int index){
-          return ListTile(
-            title: Text(content[index]),
-          );
-        },
+      body: Center(
+        child: InkWell(
+          child: Container(
+            child: Text('Flotting button'),
+          ),
+          onTap: (){print('Tapped');},
+        ),
       ),
     );
   }
