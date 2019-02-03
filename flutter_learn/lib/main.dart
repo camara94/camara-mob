@@ -4,51 +4,43 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
-  MyHomeState createState() {
-    return MyHomeState();
+  MyAppState createState(){
+    return MyAppState();
   }
 }
 
-class MyHomeState extends State<MyApp> {
-  String statement = 'Before, state change.';
+class MyAppState extends State<MyApp> {
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     title: 'Dieu est grand',
-     home: Scaffold(
-       appBar: AppBar(
-         title: Text(
-           'SetState Demo',
-         ),
-         centerTitle: true,
-       ),
-       body: Center(
-         child: Column(
-           mainAxisAlignment: MainAxisAlignment.center,
-           children: <Widget>[
-             Text(
-               statement,
-             ),
-             Padding(
-               padding: EdgeInsets.all(8.0),
-               child: RaisedButton(
-                 child: Text('Call setState'),
-                 onPressed: () {
-                   _callStateChange();
-                 },
-               ),
-             )
-           ],
-         ),
-       ),  
-     ),
+      title: 'Dieu est grand',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Dieu est grand'),
+          centerTitle: true,
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.all(8.0),
+              ),
+              Text('You have pushed the button this many times: '),
+              Text('$count'),
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: () {
+            setState(() {
+              count++; 
+            });
+          },
+        ),
+      ),
     );
-    
-  }
-
-  _callStateChange() {
-      setState(() {
-           this.statement = "Congratulation, you are changing ";
-      });
   }
 }
