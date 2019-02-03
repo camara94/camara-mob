@@ -1,0 +1,5709 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://flutterlearn.com/courses/basic-course/lessons/building-views-using-listview-builder/ -->
+<html lang="fr" prefix="og: http://ogp.me/ns#" class="gr__flutterlearn_com translated-ltr" style="overflow: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<style id="kirki-css-vars">:root{}</style><title>Cours de base - FlutterLearn</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v8.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Basic Course FlutterLearn">
+<link rel="canonical" href="https://flutterlearn.com/courses/basic-course/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Basic Course - FlutterLearn">
+<meta property="og:description" content="Basic Course FlutterLearn">
+<meta property="og:url" content="https://flutterlearn.com/courses/basic-course/">
+<meta property="og:site_name" content="FlutterLearn">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Basic Course FlutterLearn">
+<meta name="twitter:title" content="Basic Course - FlutterLearn">
+<script type="text/javascript" async="" src="./Cours de base - FlutterLearn_files/recaptcha__fr.js.téléchargement"></script><script type="text/javascript" async="" src="./Cours de base - FlutterLearn_files/analytics.js.téléchargement"></script><script async="" src="./Cours de base - FlutterLearn_files/5bbc95e67283210011cb646d.js.téléchargement"></script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/flutterlearn.com\/","sameAs":[],"@id":"https:\/\/flutterlearn.com\/#organization","name":"GeekyAnts","logo":""}</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/flutterlearn.com\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/flutterlearn.com\/courses\/","name":"Courses"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/flutterlearn.com\/courses\/basic-course\/","name":"Basic Course"}}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://platform-api.sharethis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="FlutterLearn »Flux" href="https://flutterlearn.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="FlutterLearn »Flux de commentaires" href="https://flutterlearn.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="FlutterLearn »Flux de commentaires du cours de base" href="https://flutterlearn.com/courses/basic-course/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/flutterlearn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Cours de base - FlutterLearn_files/wp-emoji-release.min.js.téléchargement" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./Cours de base - FlutterLearn_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="rm_theme_matchmytheme_label_top-css" href="./Cours de base - FlutterLearn_files/theme_rm_matchmytheme_label_top.css" type="text/css" media="all">
+<link rel="stylesheet" id="RegistrationMagic-css" href="./Cours de base - FlutterLearn_files/style_rm_front_end.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Cours de base - FlutterLearn_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="share-this-share-buttons-sticky-css" href="./Cours de base - FlutterLearn_files/mu-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-consent-style-css" href="./Cours de base - FlutterLearn_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="wpcs_stylesheet-css" href="./Cours de base - FlutterLearn_files/wp-cs.css" type="text/css" media="">
+<link rel="stylesheet" id="open-iconic-bootstrap-css" href="./Cours de base - FlutterLearn_files/open-iconic-bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-4-css" href="./Cours de base - FlutterLearn_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-bootstrap-4-style-css" href="./Cours de base - FlutterLearn_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="course-review-css" href="./Cours de base - FlutterLearn_files/course-review.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./Cours de base - FlutterLearn_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="kirki-styles-wp_bootstrap_4_theme-css" href="./Cours de base - FlutterLearn_files/kirki-styles.css" type="text/css" media="all">
+<style id="kirki-styles-wp_bootstrap_4_theme-inline-css" type="text/css">
+.custom-logo{height:60px;width:auto;}.navbar.bg-dark{background-color:#ffffff !important;}.btn-link,.btn-outline-primary,.content-area .sp-the-post .entry-header .entry-title a:hover,a{color:#007bff;}.btn-primary,.button.add_to_cart_button,.price_slider_amount button[type="submit"],.sp-services-section .sp-single-service .sp-service-icon,.wc-proceed-to-checkout .checkout-button.button,input[type="button"],input[type="reset"],input[type="submit"]{background-color:#007bff;}.btn-outline-primary,.btn-primary,.button.add_to_cart_button,.price_slider_amount button[type="submit"],.wc-proceed-to-checkout .checkout-button.button,input[type="button"],input[type="reset"],input[type="submit"]{border-color:#007bff;}.btn-outline-primary:hover{background-color:#007bff;border-color:#007bff;}.entry-title a:hover{color:#007bff !important;}.btn-outline-primary:focus,.btn-primary:focus{-webkit-box-shadow:0 0 0 0.1rem #007bff;-moz-box-shadow:0 0 0 0.1rem #007bff;box-shadow:0 0 0 0.1rem #007bff;}.form-row.place-order button[type="submit"],.shop_table.shop_table_responsive.woocommerce-cart-form__contents button[type="submit"],.single-product .summary.entry-summary button[type="submit"]{background-color:#007bff;border-color:#007bff;}.btn-link:hover,.comments-link a:hover,.edit-link a:hover,.entry-meta a:hover,a:active,a:focus,a:hover{color:#0069d9;}.btn-primary:active,.btn-primary:focus,.btn-primary:hover,.btn-primary:not(:disabled):not(.disabled):active,.button.add_to_cart_button:hover,.price_slider_amount button[type="submit"]:hover,.wc-proceed-to-checkout .checkout-button.button:hover,input[type="button"]:active,input[type="button"]:focus,input[type="button"]:hover,input[type="submit"]:active,input[type="submit"]:focus,input[type="submit"]:hover{background-color:#0069d9;border-color:#0069d9;}.form-row.place-order button[type="submit"]:hover,.shop_table.shop_table_responsive.woocommerce-cart-form__contents button[type="submit"]:hover,.single-product .summary.entry-summary button[type="submit"]:hover{background-color:#0069d9 !important;border-color:#0069d9 !important;}.site-footer.bg-white{background-color:#ffffff !important;}.site-footer.text-muted{color:#6c757d !important;}.site-footer a{color:#007bff !important;}body,button,input,optgroup,select,textarea{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;font-weight:500;}.container{max-width:1140px;}.elementor-section.elementor-section-boxed>.elementor-container{max-width:1140px;}
+</style>
+<link rel="stylesheet" id="font-awesome-css" href="./Cours de base - FlutterLearn_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="learn-press-css" href="./Cours de base - FlutterLearn_files/learnpress.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-scrollbar-css" href="./Cours de base - FlutterLearn_files/jquery.scrollbar.css" type="text/css" media="all">
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script>        <style type="text/css">
+            html, body {
+                overflow: hidden;
+            }
+
+            body {
+                opacity: 0;
+
+            }
+
+            body.course-item-popup #wpadminbar {
+                _display: none;
+            }
+
+            body.course-item-popup #learn-press-course-curriculum {
+                position: fixed;
+                top: 60px;
+                bottom: 0;
+                left: 0;
+                background: #FFF;
+                border-right: 1px solid #DDD;
+                overflow: auto;
+                z-index: 99999;
+            }
+
+            body.course-item-popup #learn-press-content-item {
+                position: fixed;
+                z-index: 9999;
+                background: #FFF;
+                top: 60px;
+                right: 0;
+                bottom: 0;
+                overflow: visible;
+            }
+        </style>
+		<script type="text/javascript" src="./Cours de base - FlutterLearn_files/jquery.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/jquery-migrate.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/core.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/widget.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/mouse.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/sortable.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/tabs.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/datepicker.min.js.téléchargement"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/effect.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/effect-slide.min.js.téléchargement"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var rm_ajax = {"url":"https:\/\/flutterlearn.com\/wp-admin\/admin-ajax.php","gmap_api":"","no_results":"No Results Found","invalid_zip":"Invalid Zip Code","request_processing":"Please wait...","hours":"Hours","minutes":"Minutes","seconds":"Seconds","days":"Days","months":"Months","years":"Years"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/script_rm_front.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/sharethis.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/watch.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/jquery.alert.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/circle-bar.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/underscore.min.js.téléchargement"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"228","time":"1549192660","secure":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/utils.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/global.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/jquery.scrollbar.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/learnpress.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/checkout.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/course.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/jquery.scrollTo.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/become-teacher.js.téléchargement"></script>
+<link rel="https://api.w.org/" href="https://flutterlearn.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://flutterlearn.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://flutterlearn.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.8">
+<link rel="shortlink" href="https://flutterlearn.com/?p=1018">
+<link rel="alternate" type="application/json+oembed" href="https://flutterlearn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fflutterlearn.com%2Fcourses%2Fbasic-course%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://flutterlearn.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fflutterlearn.com%2Fcourses%2Fbasic-course%2F&amp;format=xml">
+
+		<script async="" src="./Cours de base - FlutterLearn_files/js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-125205638-1');
+			
+		</script>
+
+	    <style id="learn-press-custom-css">
+        body.course-item-popup a{color:;}
+#course-item-content-header{background-color:#0086e7;border-bottom: 1px solid DDD;}
+#course-item-content-header a{color:;}
+#course-item-content-header .course-item-search input{color:;}
+#course-item-content-header .course-item-search input:focus{color:;}
+#course-item-content-header .course-item-search input::placeholder{color:;}
+#course-item-content-header .course-item-search button{color:;}
+body.course-item-popup .course-curriculum ul.curriculum-sections .section-content .course-item{background-color:#FFF;}
+body.course-item-popup #learn-press-course-curriculum{background-color:#FFF;border-right: 1px solid DDD;}
+body.course-item-popup .course-curriculum ul.curriculum-sections .section-content .course-item a{color:;}
+body.course-item-popup .course-curriculum ul.curriculum-sections .section-content .course-item.current{background-color:#F9F9F9;}
+body.course-item-popup .course-curriculum ul.curriculum-sections .section-content .course-item.current a{color:;}
+body.course-item-popup #learn-press-content-item{background-color:#FFF;color:;}
+body.course-item-popup #learn-press-course-curriculum .section-header{background:;color:;}
+.course-curriculum ul.curriculum-sections .section-header{border-bottom: 1px solid #00adff;}
+.course-curriculum ul.curriculum-sections .section-content .course-item{border-bottom: 1px solid DDD;}
+#course-item-content-header .toggle-content-item{border-left: 1px solid DDD;}
+#learn-press-profile-header{background-color:#f0defb;}
+.scrollbar-light > .scroll-element.scroll-y .scroll-bar{background-color:#00adff;}
+.scrollbar-light > .scroll-element .scroll-element_size{background:#00adff;}
+.learn-press-progress .progress-bg{background-color:#DDDDDD;}
+.learn-press-progress .progress-bg .progress-active{background-color:#00adff;}
+    </style>
+	<style id="ctcc-css" type="text/css" media="screen">
+				#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #ddd;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #464646;
+				}
+				#catapult-cookie-bar a {
+					color: #fff;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: ;
+				}
+				button#catapultCookie {
+					background:;
+					color: ;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #ddd;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style>			<style type="text/css">
+				.wb-bp-front-page .wp-bs-4-jumbotron {
+					background-image: url(https://flutterlearn.com/wp-content/uploads/2018/09/Background-1234.png);
+				}
+				.wp-bp-jumbo-overlay {
+					background: rgba(33,37,41, 0.7);
+				}
+			</style>
+				<style type="text/css">
+					.site-title,
+			.site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+				</style>
+		<link rel="icon" href="https://flutterlearn.com/wp-content/uploads/2018/09/cropped-favicon-flutterlearn-32x32.png" sizes="32x32">
+<link rel="icon" href="https://flutterlearn.com/wp-content/uploads/2018/09/cropped-favicon-flutterlearn-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://flutterlearn.com/wp-content/uploads/2018/09/cropped-favicon-flutterlearn-180x180.png">
+<meta name="msapplication-TileImage" content="https://flutterlearn.com/wp-content/uploads/2018/09/cropped-favicon-flutterlearn-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			body {
+	background-color: #f8f9fa;
+}
+
+.courses-type {
+	height: 320px;
+	position: relative;
+	top: -45px;
+}
+
+.courses-type div {
+	flex: 0 0 50%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	height: 100%;
+	top: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.courses-type div:hover {
+	top: -10px;
+}
+
+.courses-type .basic {
+	background: #10c45c;
+}
+
+.courses-type .advance {
+	background: #307ad5;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	-webkit-clip-path: none;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+
+/* Make sure embeds and iframes fit their containers. */
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+
+/* Make sure logo link wraps around logo image. */
+
+.custom-logo-link {
+	display: inline-block;
+}
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+/*-------------------------------------------------------------- # Custom --------------------------------------------------------------*/
+
+body {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-font-smoothing: auto;
+	text-rendering: optimizeLegibility !important;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: auto;
+}
+
+a,
+button,
+input {
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+blockquote {
+	font-size: 1.25rem;
+	padding: 1.25rem 1.75rem;
+}
+
+table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+}
+
+table th,
+table td {
+	padding: 0.75rem;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+}
+
+table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #dee2e6;
+}
+
+table tbody+tbody {
+	border-top: 2px solid #dee2e6;
+}
+
+table table {
+	background-color: #fff;
+}
+
+figcaption {
+	padding-top: 0;
+	padding-bottom: .75rem;
+	color: #6c757d;
+	text-align: left;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	-webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	padding: 0.5rem 1.25rem;
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+input[type="button"]:active,
+input[type="button"]:hover,
+input[type="reset"]:active,
+input[type="reset"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:hover {
+	color: #fff;
+	background-color: #0062cc;
+	border-color: #005cbf;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	display: block;
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0, 0, 0, 0.125) !important;
+	border-radius: 0.25rem;
+	-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	-o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input[type="text"]:-webkit-input-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-webkit-input-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="url"]:-webkit-input-placeholder,
+input[type="url"]:-moz-placeholder,
+input[type="url"]:-ms-input-placeholder,
+input[type="password"]:-webkit-input-placeholder,
+input[type="password"]:-moz-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="search"]:-webkit-input-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="number"]:-webkit-input-placeholder,
+input[type="number"]:-moz-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="tel"]:-webkit-input-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="range"]:-webkit-input-placeholder,
+input[type="range"]:-moz-placeholder,
+input[type="range"]:-ms-input-placeholder,
+input[type="date"]:-webkit-input-placeholder,
+input[type="date"]:-moz-placeholder,
+input[type="date"]:-ms-input-placeholder,
+input[type="month"]:-webkit-input-placeholder,
+input[type="month"]:-moz-placeholder,
+input[type="month"]:-ms-input-placeholder,
+input[type="week"]:-webkit-input-placeholder,
+input[type="week"]:-moz-placeholder,
+input[type="week"]:-ms-input-placeholder,
+input[type="time"]:-webkit-input-placeholder,
+input[type="time"]:-moz-placeholder,
+input[type="time"]:-ms-input-placeholder,
+input[type="datetime"]:-webkit-input-placeholder,
+input[type="datetime"]:-moz-placeholder,
+input[type="datetime"]:-ms-input-placeholder,
+input[type="datetime-local"]:-webkit-input-placeholder,
+input[type="datetime-local"]:-moz-placeholder,
+input[type="datetime-local"]:-ms-input-placeholder,
+input[type="color"]:-webkit-input-placeholder,
+input[type="color"]:-moz-placeholder,
+input[type="color"]:-ms-input-placeholder,
+textarea:-webkit-input-placeholder,
+textarea:-moz-placeholder,
+textarea:-ms-input-placeholder {
+	color: #6c757d;
+	opacity: 1;
+}
+
+select {
+	height: calc(2.25rem + 2px);
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	-o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 1.15rem;
+	border-left: 3px solid rgba(33, 37, 41, 0.25);
+	padding: 0.5rem 1.75rem;
+	background: rgba(33, 37, 41, 0.05);
+}
+
+blockquote p {
+	font-size: 1.15rem;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+.navbar-dark .navbar-nav .dropdown-menu a {
+	display: block;
+	width: 100%;
+	padding: .25rem 1.5rem;
+	clear: both;
+	font-weight: 400;
+	color: #212529;
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: transparent;
+	border: 0;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	text-align: left;
+	width: 50%;
+}
+
+.post-thumbnail {
+	margin-top: 1.5em;
+	display: inline-block;
+}
+
+.card-title.entry-title {
+	margin-bottom: .25rem;
+}
+
+.entry-meta {
+	font-size: .9rem;
+}
+
+.entry-footer {
+	font-size: .9rem;
+	margin-top: 1rem;
+}
+
+.comments-link {
+	float: right;
+	margin: 4px 0px 4px 10px;
+	font-size: 90%;
+	padding-top: 0.2em;
+}
+
+.cat-links .badge,
+.tags-links .badge {
+	font-size: 90%;
+	font-weight: normal;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	margin: 4px 10px 4px 0;
+	padding: 0.4em .9em;
+}
+
+.cat-links a,
+.tags-links a {
+	color: #6c757d;
+}
+
+.cat-links a:hover,
+.tags-links a:hover {
+	text-decoration: none;
+	color: #212529;
+}
+
+.entry-meta a,
+.comments-link a,
+.edit-link a {
+	color: #6c757d;
+}
+
+.entry-meta a:hover,
+.comments-link a:hover,
+.edit-link a:hover {
+	text-decoration: none;
+	color: #007bff;
+}
+
+.entry-title a:hover {
+	color: #007bff !important;
+}
+
+.content-area.wp-bp-404 .card-body {
+	padding: 2.5rem 4rem;
+}
+
+.sidebar-1-area .widget,
+.footer-widgets .widget {
+	margin-bottom: 0;
+	padding: 2rem;
+}
+
+.sidebar-1-area .widget ul,
+.footer-widgets .widget ul {
+	padding-left: 20px;
+	color: #6c757d;
+	margin-bottom: 0;
+}
+
+.sidebar-1-area .widget ul li,
+.footer-widgets .widget ul li {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	list-style: square;
+}
+
+.sidebar-1-area .widget ul li:last-child,
+.footer-widgets .widget ul li:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.sidebar-1-area .widget ul li a,
+.footer-widgets .widget ul li a {
+	color: #6c757d;
+}
+
+.sidebar-1-area .widget ul li a:hover,
+.footer-widgets .widget ul li a:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+.footer-widgets .widget {
+	padding: 0.5rem;
+}
+
+#wp-calendar #next {
+	text-align: right;
+}
+
+#wp-calendar #prev a,
+#wp-calendar #next a {
+	color: #6c757d;
+}
+
+#wp-calendar #prev a:hover,
+#wp-calendar #next a:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+#calendar_wrap table th,
+#calendar_wrap table td {
+	padding: .25rem;
+}
+
+.hentry.card .card-body {
+	padding: 1.5rem;
+}
+
+select {
+	height: calc(2.25rem + 2px);
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	-o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.entry-title a:hover {
+	text-decoration: none;
+}
+
+.mt-3r {
+	margin-top: 3rem;
+}
+
+.wp-bs-4-jumbotron {
+	margin-bottom: 0;
+}
+
+.wp-bs-4-jumbotron .jumbotron-heading {
+	font-weight: 600;
+}
+
+.wp-bs-4-jumbotron .container {
+	max-width: 40rem;
+}
+
+.comments-area {
+	clear: both;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.comments-area .media-body {
+	overflow: auto;
+}
+
+.comments-area .comment-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.comments-area .comment-list>li {
+	border-bottom: 1px solid #dee2e6 !important;
+	padding: 2.5rem 4rem;
+}
+
+.comments-area .comment-list ul.children {
+	list-style: none;
+	padding-left: 2rem;
+}
+
+.comments-area .comment-list ul.children li {
+	padding: 2.5rem 0 0;
+}
+
+.comments-area .comment-list .comment-respond {
+	padding: 2.5rem 4rem;
+}
+
+.comments-area .comments-title {
+	padding: 2.5rem 4rem;
+	border-bottom: 1px solid #dee2e6 !important;
+}
+
+.comments-area .comment-navigation {
+	padding: 1rem 4rem 0;
+	border-bottom: 1px solid #dee2e6 !important;
+}
+
+.comments-area .wb-comment-form {
+	padding: 2.5rem 4rem;
+}
+
+.comments-area .wb-cancel-reply {
+	margin-left: 2rem;
+}
+
+.comments-area .logged-in-as {
+	padding-left: 15px;
+	font-size: .9rem;
+}
+
+.comments-area .logged-in-as a {
+	color: #6c757d;
+}
+
+.comments-area .logged-in-as a:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+.comments-area .wb-comment-notes {
+	font-size: .9rem;
+}
+
+.comments-area .no-comments {
+	padding: 1rem 4rem;
+}
+
+.comments-area small {
+	font-size: .9rem;
+}
+
+.comments-area p {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.comments-area .comment-reply-link,
+.comments-area .comment-edit-link {
+	margin-right: 1rem;
+	color: #6c757d;
+}
+
+.comments-area .comment-reply-link:hover,
+.comments-area .comment-edit-link:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+.comments-area .comment-author a:hover {
+	text-decoration: none;
+	color: #212529;
+}
+
+.wp-bp-sticky {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+}
+
+.single .post-navigation .nav-links a {
+	color: #6c757d;
+	margin-bottom: 2rem;
+	display: inline-block;
+}
+
+.single .post-navigation .nav-links a:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+.navbar {
+	padding: 0px 15px;
+}
+
+#wp-bp-posts-slider {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#wp-bp-posts-slider .carousel-item img {
+	width: auto;
+	height: 400px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+#wp-bp-posts-slider .carousel-caption {
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 2rem 4rem;
+}
+
+#wp-bp-posts-slider .carousel-control-prev,
+#wp-bp-posts-slider .carousel-control-next {
+	width: 10%;
+}
+
+.custom-logo-link {
+	margin-right: 1rem;
+}
+
+.site-title a,
+.navbar-dark .navbar-brand,
+.site-description {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+	opacity: 0.5;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+	color: #fff;
+	opacity: 0.75;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+	color: #fff;
+	opacity: 1;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .dropdown-menu .active>.nav-link {
+	color: #212529;
+}
+
+.navbar-dark .navbar-nav .dropdown-menu .nav-link:hover,
+.navbar-dark .navbar-nav .dropdown-menu .nav-link:focus {
+	color: #212529;
+}
+
+.page-template-full-width .site-footer.mt-4,
+.wb-bp-front-page .site-footer.mt-4 {
+	margin-top: 0 !important;
+}
+
+.wb-hide-mobile-sidebar .wp-bp-sidebar-width {
+	display: none;
+}
+
+.navbar-toggler {
+	background-color: #343a40;
+}
+
+.site-header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+body.custom-background .wp-bp-main-content .col-md-8 {
+	background: #f8f9fa;
+	padding: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.site-footer a:hover {
+	text-decoration: none;
+}
+
+.admin-bar .site-header.sticky-top {
+	top: 32px;
+}
+
+.wb-bp-front-page .site-header {
+	border-bottom: 0;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron {
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	background-color: #343a40;
+	border-radius: 0;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay {
+	padding: 10rem 2rem;
+	/* background: rgba(#212529, 0.7);
+     */
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .lead {
+	opacity: .75;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading {
+	font-weight: 600;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.wb-bp-front-page .wp-bp-services-section {
+	padding: 4rem 0;
+}
+
+.wb-bp-front-page .wp-bp-main-content {
+	padding: 4rem 0;
+}
+
+.wb-bp-front-page .wp-bp-main-content p {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+.wb-bp-front-page .wp-bp-main-content blockquote {
+	font-size: 1.35rem;
+}
+
+.wb-bp-front-page .wp-bp-main-content blockquote p {
+	font-size: 1.35rem;
+}
+
+.wb-bp-front-page .wp-bp-main-content .post-thumbnail {
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+}
+
+.wb-bp-front-page .wp-bp-feat-card-img {
+	-o-object-fit: cover;
+	object-fit: cover;
+	height: 200px;
+	width: 100%;
+}
+
+.wp-caption .wp-caption-text {
+	font-size: 0.95rem;
+}
+
+.base-price,
+.ad-price {
+	background: #f9f9f9;
+	border: 2px solid #f5f5f5;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	padding: 40px 40px 50px;
+	position: relative;
+	border-radius: 3px
+}
+
+.dollar {
+	font-size: 28px;
+	color: #c7c7c7;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	padding-right: 3px;
+	margin-left: -.7em;
+}
+
+.pricing .btn {
+	margin-top: 22px;
+	margin-bottom: -94px;
+	background: #ffffff;
+}
+
+.p-y-30 {
+	padding: 30px 0px;
+}
+
+footer {
+	background: #212529;
+}
+
+.site-branding-text {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+
+
+
+
+.courses-type {
+	height: 320px;
+	position: relative;
+	top: -90px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.courses-type div {
+	
+	height: 100%;
+	top: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+	color: #ffffff;
+	padding: 70px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+	flex: 1 1 320px;
+	margin: 5px;
+	border-radius: 4px;
+}
+
+.courses-type div h2 {
+	position: relative;
+	padding-bottom: 45px;
+}
+
+.courses-type div h2:after {
+	content: '';
+	position: absolute;
+	bottom: 15px;
+	left: calc(50% - 40px);
+	width: 70px;
+	border-radius: 4px;
+	border: 5px solid #979797;
+}
+
+.courses-type a:hover {
+	text-decoration: none;
+}
+
+.courses-type p,
+.courses-type a {
+	color: #92959A;
+	font-size: 18px;
+}
+
+.basic h2 {
+	color: #44AFE5;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.advance h2 {
+	color: #1E6193;
+	font-size: 28px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.courses-type div:hover {
+	top: -10px;
+}
+
+.courses-type .basic {
+	background: #ffffff;
+}
+
+.about-us {
+	padding: 70px 0px;
+}
+
+.courses-type .advance {
+	background: #ffffff;
+	color: #333
+}
+
+.base-price,
+.ad-price {
+	background: #f9f9f9;
+	border: 2px solid #f5f5f5;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	padding: 40px 40px 50px;
+	position: relative;
+	border-radius: 3px
+}
+
+.dollar {
+	font-size: 28px;
+	color: #c7c7c7;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	padding-right: 3px;
+	margin-left: -.7em;
+}
+
+.pricing .btn {
+	margin-top: 22px;
+	margin-bottom: -94px;
+	background: #ffffff;
+}
+
+.subsribe-now {
+	background-position: top;
+	background-attachment: fixed;
+	background-size: cover !important;
+	height: 300px;
+	/* padding: 80px;
+     */
+	background-repeat: no-repeat !important;
+	justify-content: center;
+	color: #ffffff;
+	position: relative;
+}
+
+.subsribe-now .btn {
+	background: #307ad5;
+	color: #fff;
+	border-radius: 22px;
+	/* text-transform: uppercase;
+     */
+	padding: 8px 22px;
+	font-size: 18px;
+}
+
+#feedback .modal-body {
+	position: relative;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 0 15px;
+}
+
+.p-y-30 {
+	padding: 30px 0px;
+}
+
+.modal-backdrop {
+	z-index: 1 !important;
+}
+
+.modal-header {
+	color: #333;
+}
+
+.site-footer {
+	padding-bottom: 15px;
+	background: #20579B !important;
+}
+
+.navbar.bg-dark {
+	background-color: #ffffff !important;
+}
+
+.pricing .btn:hover {
+	background: #007bff !important;
+}
+
+.wp-bp-jumbo-overlay {
+	background: none !important;
+}
+
+.site-footer {
+	padding-bottom: 15px;
+	background: #ffffff !important;
+}
+
+.footer-widgets {
+	background-image: linear-gradient(to right, #05a5fd 50%, rgba(255, 255, 255, 0) 0);
+	background-position: top;
+	background-size: 17px 1px;
+	background-repeat: repeat-x;
+	padding: 1px;
+	margin-bottom: 15px;
+}
+
+.site-branding-text {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	height: 90px;
+}
+
+#primary-menu li {
+	border: 1px solid #979797;
+	margin-left: 5px;
+	min-width: 100px;
+	text-align: center;
+}
+
+#primary-menu li.btn-primary a {
+	color: #fff;
+}
+
+#primary-menu .simplemodal-register {
+	background: #0086E7;
+	border: 1px solid #0086E7;
+}
+
+#primary-menu .simplemodal-register .nav-link {
+	background: #0086E7;
+	color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #555555 !important;
+	opacity: 1 !important;
+	padding: 5px 12px !important;
+	font-size: 16px;
+}
+
+header .custom-logo {
+	height: 39px;
+	left: 0 !important;
+}
+
+header .custom-logo-link {
+	margin-right: 10px;
+}
+
+.site-title a,
+.navbar-dark .navbar-brand,
+.site-description {
+	color: #000000 !important;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -0.1px;
+	font-weight: 400;
+}
+
+.navbar-collapse {
+	flex-basis: unset !important;
+	flex-grow: unset !important;
+}
+
+.wp-bs-4-jumbotron .container {
+	max-width: 1140px !important;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading {
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	font-weight: 100;
+}
+
+.navbar {
+	padding: 0px 15px !important;
+}
+
+.container-fluid {
+	padding: 0 50px;
+}
+
+.wp-bp-jumbo-overlay .container {
+	max-width: 600px !important;
+	margin: 0;
+}
+
+.wp-bp-jumbo-overlay p {
+	font-size: 42px;
+	text-align: left;
+	line-height: 57px;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 38px;
+	text-align: left;
+	line-height: 50px;
+	font-weight: 400;
+}
+
+.grey-bg {
+	background: #fbfbfb;
+}
+
+header .custom-logo {
+	max-width: inherit !important;
+	position: relative;
+}
+
+.navbar-expand-lg .navbar-collapse {
+	position: relative;
+	right: 0 !important;
+}
+
+.blue-bg {
+	background: #2486E7;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron {
+	position: relative;
+	background-repeat: no-repeat;
+	background-color: #2486E7;
+	background-size: contain;
+	max-width: calc(1140px + 140px) !important;
+	padding: 0 70px;
+}
+
+.text-grey {
+	color: #5A5D62;
+}
+
+.about-us .img-container img {
+	height: auto;
+	max-width: fit-content;
+	width: 480px;
+	float: right;
+}
+
+.about-us .content-area {
+	padding-right: 80px;
+}
+
+p {
+	color: #96999E;
+}
+
+.p-b-100 {
+	padding-bottom: 70px;
+}
+
+.about-us p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.text-white {
+	color: #ffffff !important;
+}
+
+.about-us .img-container {
+	display: flex;
+	align-items: center;
+}
+
+h3 {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.mc4wp-form-fields p {
+	display: flex;
+}
+
+.mc4wp-form-fields input {
+	border-radius: 0px;
+}
+
+.btn-primary,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn-outline-primary,
+.button.add_to_cart_button,
+.wc-proceed-to-checkout .checkout-button.button,
+.price_slider_amount button[type="submit"] {
+	background: #0086E7;
+	border-color: #0086E7
+}
+
+#feedback .modal-content {
+	border-radius: 0;
+	border: none;
+	padding: 30px 50px;
+}
+
+.modal-header .close {
+	padding: 1rem;
+	margin: -1rem -1rem -1rem auto;
+	position: ABSOLUTE;
+	right: 15px;
+	top: 15px;
+}
+
+#feedback .modal-dialog .modal-header {
+	border-bottom: none;
+}
+
+#feedback .wpcf7 {
+	text-align: left;
+}
+
+#feedback .wpcf7-form-control-wrap {
+	display: inherit;
+	width: calc(100% - 140px);
+}
+
+#feedback label {
+	width: 100%;
+}
+
+#feedback .wpcf7-form-control-wrap input {
+	height: 45px;
+}
+
+#feedback .wpcf7-form-control-wrap input,
+#feedback textarea,
+#feedback input[type="submit"] {
+	border-radius: 0;
+	font-size: 16px !important;
+	font-weight: 300;
+}
+
+#feedback span.text-right {
+	width: 120px !important;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	color: #5A5D62;
+	line-height: 23px;
+	font-size: 18px;
+}
+
+#feedback p {
+	color: #5A5D62;
+	font-size: 16px;
+}
+
+
+
+#simplemodal-login-container form {
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+
+#simplemodal-login-container form .submit input {
+	border-radius: 0px !important;
+}
+
+.course-section {
+	position: relative;
+	height: 382px;
+	display: flex;
+	align-items: center;
+}
+
+.course-section img {
+	position: absolute;
+	z-index: -9;
+}
+
+.course-section .container {
+	display: flex;
+	position: relative;
+}
+
+.course-section .content-section {
+	height: 232px;
+	align-items: center;
+	width: 100%;
+}
+
+.what-learn {
+	bottom: -232px;
+}
+
+.card {
+	border-radius: 0 !important;
+	background: #FFFFFF;
+	box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.50);
+	border: none !important;
+}
+
+.course-section h3 {
+	color: #ffffff;
+}
+
+.courses-type {
+	height: 320px;
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.courses-type div {
+	height: 100%;
+	top: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position: relative;
+	color: #ffffff;
+	padding: 50px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+	flex: 1 1 320px;
+	margin: 5px;
+	border-radius: 4px;
+}
+
+.courses-type div h2 {
+	position: relative;
+	padding-bottom: 45px;
+}
+
+.courses-type div h2:after {
+	content: '';
+	position: absolute;
+	bottom: 15px;
+	left: calc(50% - 40px);
+	width: 70px;
+	border-radius: 4px;
+	border: 5px solid #979797;
+}
+
+.courses-type a:hover {
+	text-decoration: none;
+}
+
+.courses-type p,
+.courses-type a {
+	color: #92959A;
+	font-size: 18px;
+}
+
+.basic h2 {
+	color: #44AFE5;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.advance h2 {
+	color: #1E6193;
+	font-size: 28px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.courses-type div:hover {
+	top: -10px;
+}
+
+.courses-type .basic {
+	background: #ffffff;
+}
+
+.about-us {
+	padding: 70px 0px;
+}
+
+.courses-type .advance {
+	background: #ffffff;
+	color: #333
+}
+
+.base-price,
+.ad-price {
+	background: #f9f9f9;
+	border: 2px solid #f5f5f5;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	padding: 40px 40px 50px;
+	position: relative;
+	border-radius: 3px
+}
+
+.dollar {
+	font-size: 28px;
+	color: #c7c7c7;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	padding-right: 3px;
+	margin-left: -.7em;
+}
+
+.pricing .btn {
+	margin-top: 22px;
+	margin-bottom: -94px;
+	background: #ffffff;
+}
+
+.subsribe-now {
+	background-position: top;
+	background-attachment: fixed;
+	background-size: cover !important;
+	height: 300px;
+	/* padding: 80px;
+     */
+	background-repeat: no-repeat !important;
+	justify-content: center;
+	color: #ffffff;
+	position: relative;
+}
+
+.subsribe-now .btn {
+	background: #307ad5;
+	color: #fff;
+	border-radius: 22px;
+	/* text-transform: uppercase;
+     */
+	padding: 8px 22px;
+	font-size: 18px;
+}
+
+#feedback .modal-body {
+	position: relative;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 0 15px;
+}
+
+.p-y-30 {
+	padding: 30px 0px;
+}
+
+.modal-backdrop {
+	z-index: 1 !important;
+}
+
+.modal-header {
+	color: #333;
+}
+
+.site-footer {
+	padding-bottom: 15px;
+	background: #20579B !important;
+}
+
+.navbar.bg-dark {
+	background-color: #ffffff !important;
+}
+
+.pricing .btn:hover {
+	background: #007bff !important;
+}
+
+.wp-bp-jumbo-overlay {
+	background: none !important;
+}
+
+.site-footer {
+	padding-bottom: 15px;
+	background: #ffffff !important;
+}
+
+.footer-widgets {
+	background-image: linear-gradient(to right, #05a5fd 50%, rgba(255, 255, 255, 0) 0);
+	background-position: top;
+	background-size: 17px 1px;
+	background-repeat: repeat-x;
+	padding: 1px;
+	margin-bottom: 15px;
+}
+
+header {
+	height: 90px;
+}
+
+#primary-menu li {
+	border: 1px solid #eee;
+	margin-left: 5px;
+	min-width: 100px;
+	text-align: center;
+}
+
+#primary-menu li:hover {
+	background: #0086E7;
+	color: #fff;
+}
+
+#primary-menu li:hover a {
+	color: #fff;
+}
+
+#primary-menu .simplemodal-register {
+	background: #0086E7;
+	border: 1px solid #0086E7;
+}
+
+#primary-menu .simplemodal-register .nav-link {
+	background: #0086E7;
+	color: #ffffff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #555555 !important;
+	opacity: 1 !important;
+	padding: 5px 12px !important;
+	font-size: 16px;
+}
+
+header .custom-logo {
+	height: 39px;
+}
+
+header .custom-logo-link {
+	margin-right: 10px;
+}
+
+.site-title a,
+.navbar-dark .navbar-brand,
+.site-description {
+	color: #000000 !important;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -0.1px;
+	font-weight: 400;
+}
+
+.navbar-collapse {
+	flex-basis: unset !important;
+	flex-grow: unset !important;
+}
+
+.wp-bs-4-jumbotron .container {
+	max-width: 1140px !important;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay .jumbotron-heading {
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	font-weight: 100;
+}
+
+.navbar {
+	padding: 0px 15px !important;
+}
+
+.container-fluid {
+	padding: 0 50px;
+}
+
+.wp-bp-jumbo-overlay .container {
+	max-width: 600px !important;
+	margin: 0;
+}
+
+.wp-bp-jumbo-overlay p {
+	font-size: 42px;
+	text-align: left;
+	line-height: 57px;
+	margin-bottom: 50px;
+}
+
+h2 {
+	
+	font-size: 30px !important;
+	font-weight: 300;
+	text-align: left;
+	line-height: 40px;
+}
+
+.grey-bg {
+	background: #fbfbfb;
+}
+
+header .custom-logo {
+	max-width: inherit !important;
+	position: relative;
+}
+
+.navbar-expand-lg .navbar-collapse {
+	position: relative;
+}
+
+.blue-bg {
+	background: #2486E7;
+}
+
+.wb-bp-front-page .wp-bs-4-jumbotron {
+	position: relative;
+	background-repeat: no-repeat;
+	background-color: #2486E7;
+	background-size: contain;
+	max-width: calc(1140px + 140px) !important;
+	padding: 0 70px;
+}
+
+.text-grey {
+	color: #5A5D62;
+}
+
+.about-us .img-container img {
+	height: auto;
+	max-width: fit-content;
+	width: 480px;
+	float: right;
+}
+
+.about-us .content-area {
+	padding-right: 80px;
+}
+
+.content-area h3 {
+	padding-top: 80px;
+	color: #262626;
+}
+
+p {
+	color: #96999E;
+}
+
+.p-b-100 {
+	padding-bottom: 70px;
+}
+
+.about-us p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.text-white {
+	color: #ffffff !important;
+}
+
+.about-us .img-container {
+	display: flex;
+	align-items: center;
+}
+
+h3 {
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.mc4wp-form-fields p {
+	display: flex;
+}
+
+.mc4wp-form-fields input {
+	border-radius: 0px;
+}
+
+.btn-primary,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn-outline-primary,
+.button.add_to_cart_button,
+.wc-proceed-to-checkout .checkout-button.button,
+.price_slider_amount button[type="submit"] {
+	background: #0086E7;
+	border-color: #0086E7
+}
+
+#feedback .modal-content {
+	border-radius: 0;
+	border: none;
+	padding: 30px 50px;
+}
+
+.modal-header .close {
+	padding: 1rem;
+	margin: -1rem -1rem -1rem auto;
+	position: ABSOLUTE;
+	right: 15px;
+	top: 15px;
+}
+
+#feedback .modal-dialog .modal-header {
+	border-bottom: none;
+}
+
+#feedback .wpcf7 {
+	text-align: left;
+}
+
+#feedback label {
+	width: 100%;
+}
+
+#feedback .wpcf7-form-control-wrap input {
+	height: 45px;
+}
+
+#feedback .wpcf7-form-control-wrap input,
+#feedback textarea,
+#feedback input[type="submit"] {
+	border-radius: 0;
+	font-size: 18px;
+}
+
+#feedback p {
+	color: #5A5D62;
+	font-size: 16px;
+}
+
+
+
+#simplemodal-login-container form {
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+
+#simplemodal-login-container form .submit input {
+	border-radius: 0px !important;
+}
+
+.course-section {
+	position: relative;
+	min-height: 382px;
+	display: flex;
+	align-items: center;
+	background: #0086E7;
+}
+
+.course-section img {
+	position: absolute;
+	z-index: 1;
+}
+
+.course-section .container {
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.course-section .content-section {
+	min-height: 232px;
+	align-items: center;
+	width: 100%;
+}
+
+.course-section .content-section div {
+	position: relative;
+	height: auto;
+	color: #fff;
+}
+
+.course-section .content-section div .text-sm {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	height: auto;
+	color: #fff;
+	font-size: 20px;
+}
+
+.course-section .content-section div p {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.course-section .content-section .btn-wrapper {
+	margin-left: auto;
+	font-size: 20px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 0px;
+	justify-content: center;
+}
+
+.course-section .content-section .btn-wrapper .btn {
+	color: #2E87E4;
+	border-radius: 0;
+	font-size: 26px;
+	text-align: center;
+	padding-right: 30px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	height: 77px;
+}
+
+.btn-wrapper .btn i {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.what-learn {
+	position: relative;
+	top: -100px;
+	z-index: 9;
+}
+
+.what-learn h3 {
+	padding-top: 0px !important;
+	padding-top: 0px !important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin: 15px 0px;
+}
+
+.card {
+	border-radius: 0 !important;
+	background: #FFFFFF;
+	box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.50);
+	border: none !important;
+}
+
+.course-section .learn-section h3 {
+	color: #5C5C5C;
+	font-size: 24px;
+}
+
+.course-section h3 {
+	font-size: 32px;
+	line-height: 38px;
+	color: #ffffff;
+}
+
+.learn-section .fa-ul {
+	margin-left: 0;
+}
+
+.learn-section .fa-ul li {
+	font-size: 16px;
+	color: #797979;
+	font-family: HelveticaNeue;
+	margin-bottom: 15px;
+	left: 0;
+	width: 100%;
+	text-align: left;
+	padding-left: 25px;
+	line-height: 20px;
+}
+
+.learn-section .fa-ul {
+	margin: 30px 0px 0px 0px;
+}
+
+.learn-section .fa-ul li:before {
+	position: relative;
+	left: 0px;
+	color: #5C5C5C;
+	font-size: 12px;
+	font: normal normal normal 14px/1 FontAwesome;
+	position: absolute;
+	top: 5px;
+}
+
+.list-group {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.list-group li {
+	/* Rectangle 12: */
+	background: #FFFFFF;
+	/* Hello Dart ("Hello W: */
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	color: #5C5C5C;
+	line-height: 20px;
+	/* Oval: */
+	background: #FFFFFF;
+	border-radius: 0px !important;
+}
+
+.list-group li h2 a,
+.list-group li h2 {
+	font-size: 16px;
+	color: #5C5C5C;
+	line-height: 20px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.list-group li h2 a {
+	width: 100%;
+}
+
+.list-group li .hentry {
+	margin: 0;
+}
+
+.list-group li h2 i {
+	margin-left: auto;
+	color: #2486E7;
+	font-size: 12px;
+	padding-left: 15px;
+}
+
+.dark-gray {
+	background: #fbfbfb;
+}
+
+text-dark {
+	color: #262626;
+}
+
+.p-b-15 {
+	padding-bottom: 15px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0 !important;
+}
+
+.m-b-80 {
+	margin-bottom: 80px;
+}
+
+@media(max-width: 768px) {
+	body .course-section .content-section div {
+		padding-top: 30px;
+	}
+	body .course-section .content-section div {
+		padding-top: 0px !important;
+	}
+	.learn-press-course-results-progress .items-progress,
+	.learn-press-course-results-progress .course-progress {
+		width: 90% !important;
+	}
+	.course-section .content-section {
+		padding-top: 30px;
+	}
+	body .course-section {
+		height: auto !important;
+	}
+	.content-section .rating-btn {
+		display: block;
+	}
+	body .course-section .content-section .btn-wrapper {
+		float: none;
+		justify-content: center;
+		/* margin: 0 auto;
+         */
+		width: 100%;
+		align-items: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	body .course-section {
+		padding-bottom: 100px;
+	}
+	body .what-learn {
+		position: absolute;
+		top: -60px;
+		z-index: 9;
+	}
+	.content-area .col-md-7 {
+		padding-top: 100px;
+	}
+	.course-section .content-section div .text-sm {
+		position: relative;
+	}
+}
+
+.course-section .content-section .progressbar {
+	height: auto;
+}
+
+.items-progress .lp-progress-bar,
+.course-progress .lp-progress-bar {
+	background: rgba(255, 255, 255, 0.4)
+}
+
+.content-section .review-number {
+	display: none;
+}
+
+.content-section .course-rate .course-rate {
+	display: none;
+}
+
+.learn-press-breadcrumb,
+.course-meta {
+	display: none;
+}
+
+#lp-single-course .learn-press-course-results-progress,
+.course-remaining-time {
+	display: none;
+}
+
+.learn-press-progress .progress-bg .progress-active {
+	background-color: #196ece
+}
+
+.course-section {
+	border-bottom: 55px solid #fff;
+	position: relative;
+}
+
+.course-section:after {
+	content: '';
+	position: absolute;
+	bottom: -55px;
+	background: #ddd;
+	height: 1px;
+	left: 0;
+	right: 0;
+}
+
+ul.learn-press-nav-tabs {
+	border-bottom: 1px solid #DDD;
+}
+
+#learn-press-course-tabs {
+	margin-bottom: 40px;
+	position: relative;
+	top: -69px;
+}
+
+.btn,
+.lp-button {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+}
+
+.course-curriculum ul.curriculum-sections .section-header {
+	background: none;
+	padding: 0;
+}
+
+.btn-link,
+.btn-outline-primary,
+.content-area .sp-the-post .entry-header .entry-title a:hover,
+a {
+	color: #0086E7;
+}
+
+.course-curriculum ul.curriculum-sections .section-content .course-item.has-status.passed {
+	border-color: #eee;
+}
+
+.course-curriculum ul.curriculum-sections .section-header {
+	border-bottom: none;
+}
+
+.course-curriculum ul.curriculum-sections .section-content .course-item {
+	padding: 0;
+	font-size: 16px;
+}
+
+.course-curriculum ul.curriculum-sections .section-content .course-item .section-item-link {
+	padding: 0 15px;
+}
+
+.course-curriculum ul.curriculum-sections .section-content .course-item .section-item-link:hover {
+	text-decoration: none;
+	background: #f0f7ff;
+}
+
+.course-section .content-section div {
+	margin-bottom: 0;
+}
+
+.hentry {
+	margin: 0;
+}
+
+.course-section .content-section div p {
+	margin: 15px 0 30px 0;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+#course-item-content-header .course-title a {
+	margin-left: 0;
+	font-weight: 300;
+}
+
+#course-item-content-header .course-item-search button {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#course-item-content-header .course-item-search input {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+	padding: 0;
+	border-radius: 0;
+	height: 40px;
+	font-weight: normal;
+	border-top: 0 !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+}
+
+#course-item-content-header .form-button.lp-button-back button {
+	line-height: 34px;
+	background: none !important;
+	box-shadow: none;
+	color: #fff;
+}
+
+#course-item-content-header .course-title a:hover {
+	text-decoration: none;
+}
+
+.scroll-wrapper {
+	padding-top: 10px !important;
+	background: #fbfbfb;
+}
+
+#course-item-content-header .course-item-search {
+	padding: 10px;
+}
+
+.comments-area .wb-comment-form {
+	padding: 10px;
+}
+
+.content-item-wrap #comments #comment {
+	border-radius: 0;
+}
+
+.learn-sections {
+	background: #FFFFFF;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	padding: 30px;
+	position: relative;
+	top: 30px;
+}
+
+.play-course {
+	margin-top: 80px;
+}
+
+.course-tab-panel-curriculum {}
+
+#learn-press-course {
+	position: relative;
+}
+
+.lp-course-buttons {
+	position: absolute;
+	top: -74px;
+	right: 0;
+}
+
+.course-curriculum ul.curriculum-sections .section-content {
+	list-style: none;
+	margin: 0 0 15px 0;
+	padding: 0;
+	background: #fff;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+
+.btn {
+	border-radius: 0px;
+	transition: background-color .3s;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	padding: 5px 15px;
+}
+
+.btn>* {
+	position: relative;
+}
+
+.custom-btn {
+	border-radius: 0px;
+	background: #fff;
+	padding: 10px;
+	display: block;
+	font-size: 26px;
+}
+
+.custom-btn i {
+	padding-right: 30px;
+}
+
+.custom-btn a:hover {
+	text-decoration: none;
+}
+
+.learnpress-page .lp-button {
+	line-height: 45px;
+	padding: 0 12px;
+	height: 45px;
+	background: #0086E7;
+	color: #ffffff !important;
+}
+
+.mc4wp-form-fields p {
+	height: 40px;
+}
+
+.btn-primary,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn-outline-primary,
+.button.add_to_cart_button,
+.wc-proceed-to-checkout .checkout-button.button,
+.price_slider_amount button[type="submit"] {
+	font-size: 18px;
+}
+
+#primary-menu li a {
+	margin-left: 0;
+	min-width: 100px;
+	text-align: center;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#primary-menu li {
+	font-size: 18px;
+	;
+	padding: 0;
+	border: none;
+}
+
+.logged-in .logout {
+	display: block !important;
+}
+
+.logged-in .register {
+	display: none !important;
+}
+
+.logged-in .login {
+	display: none !important;
+}
+
+.logout {
+	display: none !important;
+}
+
+#wpmpLoginSection,
+#wpmpRegisterSection,
+.learn-press-checkout {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+	background: #fff;
+	margin-bottom: 50px;
+	padding: 30px;
+	max-width:100%;
+}
+
+.has-feedback .form-control,
+.has-success .form-control {
+	border-color: #3c763d;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	height: 40px;
+	font-size: 16px;
+	font-family: Roboto;
+}
+
+#wpmpLoginSection h3,
+#wpmpRegisterSection h3 {
+	padding-top: 0 !important;
+}
+
+#wpmpLoginSection label,
+#wpmpRegisterSection label {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	height: 40px;
+	font-size: 16px;
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+
+.rmagic .buttonarea input[type='button'],
+.rmagic .buttonarea input[type='submit'] {
+	border-radius: 0px;
+}
+
+.searchform-popup fieldset .fa-search {
+	font-size: 22px;
+}
+
+ul.learn-press-nav-tabs .course-nav a {
+	font-size: 16px;
+}
+
+.learnpress-page .lp-button {
+	font-size: 16px;
+}
+
+body.course-item-popup.wpadminbar #learn-press-course-curriculum,
+body.course-item-popup #learn-press-content-item {
+	top: 150px !important;
+}
+
+body.course-item-popup #course-item-content-header {
+	top: 123px !important;
+}
+
+.rating-btn {
+	justify-content: center;
+	display: flex;
+	width: 100%;
+}
+
+.play-course {
+	width: 100%;
+}
+
+.rating-btn .review-stars-rated .review-stars.empty,
+.rating-btn .review-stars-rated .review-stars.filled {
+	color: #ffffff;
+}
+
+.learn-press-course-results-progress .items-progress .lp-course-progress-heading,
+.learn-press-course-results-progress .course-progress .lp-course-progress-headin {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.lp-label {
+	color: #57a524;
+	position: absolute;
+	right: 0;
+}
+
+.course-section .content-section div p {
+	margin: 15px 0 50px 0;
+}
+
+.lp-course-buttons {
+	top: -74px;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border-radius: 0px;
+}
+
+#learn-press-course-tabs {
+	top: -69px;
+}
+
+ul.learn-press-nav-tabs .course-nav a:hover {
+	text-decoration: none;
+}
+
+ul.learn-press-nav-tabs .course-nav.active:after,
+ul.learn-press-nav-tabs .course-nav:hover:after {
+	bottom: 0px;
+}
+
+#course-item-content-header .toggle-content-item {
+	border: none;
+	color: #fff;
+}
+
+#course-item-content-header .toggle-content-item:hover {
+	text-decoration: none;
+	background: #1E6193;
+}
+
+#course-item-content-header .form-button.lp-button-back button {
+	border: none;
+}
+
+.lp-course-progress .lp-passing-conditional {
+	height: 10px !important;
+	top: -10px;
+}
+
+.learn-press-course-results-progress .items-progress .lp-progress-bar,
+.learn-press-course-results-progress .course-progress .lp-progress-bar {
+	margin-top: 10px;
+}
+
+.course-curriculum .scroll-wrapper ul.curriculum-sections .section-content {
+	box-shadow: none;
+}
+
+body.course-item-popup #learn-press-content-item .course-item-title {
+	font-size: 25px;
+}
+
+.learn-press-message {
+	font-size: 16px;
+}
+
+.learn-press-form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.course-item-nav {
+	margin-left: auto;
+}
+
+.course-item-nav .prev a,
+.course-item-nav .next a {
+	font-size: 14px;
+	font-weight: 300;
+	color: #0086E7;
+	padding: 2px 8px;
+}
+
+.course-item-nav .prev span,
+.course-item-nav .next span {
+	display: block;
+	font-weight: 300;
+}
+
+.course-item-nav .prev,
+.course-item-nav .next {
+	margin-left: 0px !important;
+}
+
+
+/* .prev:after{
+     width: 0;
+     height: 0;
+     border-top: 7px solid transparent;
+     border-bottom: 7px solid transparent;
+     border-right: 7px solid #004485;
+     content: '';
+     position: absolute;
+     top: -7px;
+     z-index: -9;
+     left: 0px;
+}
+ */
+
+#course-item-content-header .course-title {
+	line-height: 52px;
+}
+
+#course-item-content-header .course-title a {
+	color: #fff;
+	font-size: 21px;
+}
+
+.learn-press-course-results-progress .items-progress .lp-course-progress-heading,
+.learn-press-course-results-progress .course-progress .lp-course-progress-heading {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+#lp-single-course {
+	position: relative;
+	z-index: 9;
+}
+
+.site-header {
+	background: #fff;
+}
+
+.logout {
+	margin-left: 0;
+	min-width: 100px;
+	text-align: center;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+}
+
+.learn-press-form.register,
+.learn-press-form.login {
+	display: block !important;
+}
+
+.learn-press-course-results-progress .items-progress,
+.learn-press-course-results-progress .course-progress {
+	width: 35%;
+}
+
+.viewing-course-item .site-content {
+	display: none;
+}
+
+course-landing-summary .course-price,
+.course-item-lp_lesson footer {
+	display: none;
+}
+
+body.course-item-popup #course-item-content-header {
+	top: 90px !important;
+}
+
+body.admin-bar.course-item-popup #course-item-content-header {
+	top: 122px !important;
+}
+
+body.admin-bar.course-item-popup #learn-press-course-curriculum {
+	position: fixed;
+	top: 90px;
+}
+
+body.course-item-popup #learn-press-course-curriculum {
+	position: fixed;
+	top: 149px;
+}
+
+body.course-item-popup .learn-press-content-protected-message {
+	margin-bottom: 50px;
+	padding: 20px;
+	background: #ffe0e0;
+	display: flex;
+	align-items: center;
+}
+
+body.course-item-popup .learn-press-content-protected-message .btn {
+	margin-left: auto;
+}
+
+.social-icons {
+	position: relative;
+	width: 100%;
+}
+
+.sfsiplus_norm_row {
+	width: 100% !important;
+}
+
+.learn-press-content-protected-message .custom-btn {
+	font-size: 16px;
+}
+
+.course-landing-summary .course-price {
+	display: none;
+}
+
+.content-item-wrap #comments #comment {
+	border-radius: 0;
+	font-size: 14px;
+}
+
+.comment-submit-btn {
+	border-radius: 0;
+	float: right;
+	margin-top: 15px;
+}
+
+.reply-title {
+	font-size: 18px;
+}
+
+.comments-area p {
+	font-size: 14px;
+}
+
+body #feedback span.text-right {
+	width: 120px !important;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+	color: #5A5D62;
+	line-height: 23px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body #feedback .textbox span.text-right {
+	vertical-align: top;
+	padding-top: 20px;
+}
+
+.m-b-100 {
+	margin-bottom: 100px;
+}
+
+.wp-bp-content-width {}
+
+body.course-item-popup #learn-press-content-item .content-item-wrap {
+	position: relative;
+}
+
+iframe {
+	width: 100%;
+	height: 500px !important;
+}
+
+.course-curriculum ul.curriculum-sections .section-header .section-title {
+	font-size: 16px;
+}
+
+.course-curriculum ul.curriculum-sections .section-content .course-item .item-icon,
+.course-curriculum ul.curriculum-sections .section-content .course-item .item-name {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 5px;
+	font-size: 14px;
+}
+
+.comments-area .comments-title {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.comments-area small {
+	font-size: 10px;
+}
+
+.search h2 {
+	font-size: 22px !important;
+}
+
+.search .card-body header {
+	height: auto;
+}
+
+.search .addtoany_content {
+	display: none
+}
+
+.search p {
+	font-size: 16px;
+}
+
+.search .site-main header {
+	height: auto;
+}
+
+.search .nav-links .btn {
+	background: none;
+	border: navajowhite;
+	box-shadow: none;
+	margin: 20px 0px;
+}
+
+.search .nav-links .btn:hover,
+.search .nav-links .btn:active,
+.search .nav-links .btn:visited {
+	color: #0086E7;
+}
+
+.logged-in.course-item-lp_lesson .course-item-nav,
+.logged-in.course-item-lp_lesson .comments-area {
+	display: block;
+}
+
+.learn-press-form.form-button.completed p {
+	font-size: 22px;
+}
+
+body.course-item-popup .learn-press-content-protected-message {
+	border-radius: 0 !important;
+}
+
+body.course-item-popup .learn-press-content-protected-message a {
+	margin: 0 2px;
+}
+
+body.course-item-popup .learn-press-content-protected-message {
+	position: relative;
+}
+
+body.course-item-popup .learn-press-content-protected-message .buy-btn {
+	margin-top: 30px;
+}
+
+body.course-item-popup .learn-press-content-protected-message .buy-btn .btn:focus {
+	color: #fff;
+}
+
+.collapse.in {
+	display: block;
+}
+
+.thank-you .card-body {
+	height: 200px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.mc4wp-success p {
+	color: green;
+	font-size: 16px;
+}
+
+.mc4wp-error p {
+	color: red;
+	font-size: 16px;
+}
+
+body.home {
+	background: #ffffff;
+}
+
+#feedback textarea {
+	height: 100px;
+}
+
+.modal-header .close {
+	font-size: 26px;
+}
+
+div.wpcf7 .ajax-loader {
+	display: block;
+}
+
+.about {
+	padding: 30px 0px;
+}
+
+.about p {
+	font-size: 18px;
+}
+
+.about img {
+	text-align: center;
+	float: right;
+	padding-top: 80px;
+}
+
+.origin-price {
+	color: #f2b827;
+	font-size: 14px;
+}
+
+.page-content .searchform.wp-bootstrap-4-searchform {
+	display: none;
+}
+
+.page-id-1772 .site-content,
+.page-id-1778 .site-content,
+.page-id-1762 .site-content {
+	display: block !important;
+}
+
+.custom-form {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+	background: #fff;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+
+.custom-form {
+	position: relative;
+}
+
+.custom-form .error_login {
+	position: absolute;
+	bottom: 15px;
+	color: red;
+}
+
+.custom-form .success_login {
+	position: absolute;
+	bottom: 15px;
+	color: green;
+}
+
+.custom-form h3 {
+	padding-top: 0 !important;
+}
+
+.single-lp_course .learn-press-message {
+	display: none;
+}
+
+span.wpcf7-not-valid-tip {
+	position: ABSOLUTE;
+	font-size: 10px;
+}
+
+.rmagic .rmrow .rmfield label {
+	font-weight: 600;
+	width: auto;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+.submit-btn {
+	position: relative;
+}
+
+div.wpcf7 .ajax-loader {
+	position: absolute;
+	top: 13px;
+	z-index: 99;
+	left: -27px;
+}
+
+body.course-item-popup #learn-press-course-curriculum .course-item {
+	padding: 0;
+}
+
+body.course-item-popup .course-curriculum ul.curriculum-sections .section-content .course-item a {
+	padding: 0 15px;
+}
+
+#tab-instructor .course-author .author-name a {
+	color: #333;
+	font-size: 16px;
+}
+
+.wpcf7-form-control.g-recaptcha,
+.wpcf7-form .submit-btn {
+	margin-left: 135px;
+}
+
+.wpcf7-form .submit-btn {
+	margin-top: 30px;
+}
+
+#learn-press-profile-nav .tabs>li.quizzes {
+	display: none;
+}
+
+#learn-press-user-profile {
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+}
+
+#learn-press-profile-header {
+	background-color: transparent;
+}
+
+.learn-press-subtab-content h3 {
+	padding-top: 0px !important;
+}
+
+.course-item-nav {
+	display: flex !important;
+}
+
+#course-item-content-header .course-item-search input:focus,
+#course-item-content-header .course-item-search input {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#course-item-content-header .course-item-search input {
+	font-style: normal;
+}
+
+.course-item-search ::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: rgba(255, 255, 255, .4) !important;
+}
+
+.course-item-search ::-moz-placeholder {
+	/* Firefox 19+ */
+	color: rgba(255, 255, 255, .4) !important;
+}
+
+.course-item-search :-ms-input-placeholder {
+	/* IE 10+ */
+	color: rgba(255, 255, 255, .4) !important;
+}
+
+.course-item-search :-moz-placeholder {
+	/* Firefox 18- */
+	color: rgba(255, 255, 255, .4) pink;
+}
+
+.comments-area .comment-list>li {
+	padding: 15px 0;
+	border: none !important;
+}
+
+.comments-area p {
+	color: #444
+}
+
+.align-self-start {
+	width: 40px;
+}
+
+.media {
+	background: #fff;
+	padding: 15px;
+	border: solid 1px #ddd;
+}
+
+.comments-area .comment-list ul.children li {
+	padding: 15px 0 0 0;
+}
+
+.comments-area .comment-list ul.children {
+	padding-left: 15px;
+}
+
+.comments-area .wb-comment-form {
+	padding: 15px 0 0 0;
+}
+
+.learn-press-stripe-expiry {
+	width: 49%;
+	display: inline-block;
+}
+
+.learn-press-form-row label {
+	display: block;
+}
+
+.modal-open .lp-single-course {
+	z-index: 1 !important;
+}
+
+#profile-content-settings .learn-press-form {
+	display: block !important
+}
+
+.lesson-description {
+	position: relative;
+}
+
+.course-item-nav .prev {
+	position: absolute;
+	top: 0;
+	right: 35px;
+}
+
+.course-item-nav .next {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/* .course-item-nav .next:after{
+     width: 0;
+     height: 0;
+     border-top: 7px solid transparent;
+     border-bottom: 7px solid transparent;
+     border-left: 7px solid #004485;
+     content: '';
+     position: absolute;
+     top: -7px;
+     z-index: -9;
+     right: 0px;
+}
+ */
+
+.learn-press-content-protected-message {
+	background: rgba(0, 0, 0, 0.8) !important;
+	height: 440px;
+	margin-top: 30px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: 300;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+	body.course-item-popup #learn-press-course-curriculum {
+		width: 100%;
+	}
+	.navbar-expand-lg .navbar-collapse {
+		position: absolute;
+		width: 150px;
+		top: 89px;
+		z-index: 9;
+	}
+}
+
+.viewing-course-item #page {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.share-conatiner {
+	display: flex;
+	align-items: center;
+}
+
+.learn-press-form.form-button {
+	width: auto !important;
+}
+
+.share-conatiner .share {
+	margin-left: auto;
+}
+
+.share-conatiner.unenrolled {
+	margin-top: -50px;
+}
+@media screen and (max-width: 480px){
+#learn-press-profile-content {
+    float: none;
+     width: 100% !important; 
+}
+#learn-press-profile-nav .learn-press-tabs{
+    z-index:9999;
+}
+body .lp-profile-content{
+    margin-top:30px !important
+}
+}
+@media screen and (max-width: 992px) {
+	.content-section .rating-btn{
+		display:none;
+}
+	.courses-type .basic,.courses-type .advance{
+		width:320px;
+	}
+	.navbar-toggler {
+		background-color: #343a40;
+		background: none;
+		color: #2486E7;
+		font-size: 32px;
+	}
+	.btn.register {
+		background: #fff;
+	}
+	body .custom_search .searchform-popup {
+		width: 390px;
+	}
+	.about img {
+		display: none;
+	}
+	body .searchform {
+		left: 5%;
+		right: 5%;
+	}
+	.footer .col-sm-6 {
+		text-align: center !important;
+		float: none !important;
+	}
+	.footer .col-sm-6 a {
+		margin-left: 0 !important;
+	}
+	.footer .col-sm-6 div {
+		float: none !important;
+	}
+	.courses-type div {
+		padding: 20px;
+	}
+	#course-item-content-header .course-title {
+		display: none;
+	}
+	.course-section .content-section {
+		height: auto !important;
+	}
+}
+
+
+@media(min-width: 576px) {
+	#feedback .modal-dialog {
+		max-width: 700px;
+    }
+    #feedback .modal-dialog {
+		max-width: 700px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    body .course-section .content-section div {
+		padding-top: 30px;
+	}
+	body .course-section .content-section div {
+		padding-top: 0px !important;
+	}
+	.learn-press-course-results-progress .items-progress,
+	.learn-press-course-results-progress .course-progress {
+		width: 90% !important;
+	}
+	.course-section .content-section {
+		padding-top: 30px;
+	}
+	body .course-section {
+		height: auto !important;
+	}
+	.content-section .rating-btn {
+		display: none;
+	}
+	body .course-section .content-section .btn-wrapper {
+		float: none;
+		justify-content: center;
+		/* margin: 0 auto;
+         */
+		width: 100%;
+		align-items: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	body .course-section {
+		padding-bottom: 100px;
+	}
+	body .what-learn {
+		position: absolute;
+		top: -60px;
+		z-index: 9;
+	}
+	.content-area .col-md-7 {
+		padding-top: 100px;
+	}
+	.course-section .content-section div .text-sm {
+		position: relative;
+	}
+	.course-item-nav .next,
+	.course-item-nav .prev {
+		top: 45px !important;
+	}
+	body iframe {
+		height: 320px !important;
+	}
+	.wb-bp-front-page .wp-bs-4-jumbotron .wp-bp-jumbo-overlay {
+		padding: 30px !important;
+	}
+	.custom_search {
+		display: none;
+	}
+	body header .custom-logo {
+		left: 0;
+	}
+	body .navbar-expand-lg .navbar-collapse {
+		right: 0;
+	}
+	body .courses-type {
+		height: auto;
+		position: relative;
+		top: -96px;
+		max-width: 800px;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+	.wb-bp-front-page .wp-bs-4-jumbotron {
+		max-width: 100% !important;
+		padding: 10px !important;
+		padding-bottom: 70px !important;
+	}
+	body .courses-type div {
+		padding: 10px;
+    }
+    .about-us .img-container img {
+		width: 320px !important;
+	}
+	.about-us .content-area {
+		padding-right: 15px !important;
+	}
+	.play-course,
+	.learn-section {
+		display:block !important;
+	}
+	body .lp-course-buttons {
+		top: -130px;
+	}
+	body iframe {
+		width: 100%;
+	}
+
+	.course-section .container {
+		top: 30px;
+	}
+	.course-section .content-section div p {
+		margin: 0px !important;
+	}
+	body .course-section .content-section .learn-press-course-results-progress div {
+		padding-top: 10px;
+	}
+	body .course-section .content-section .learn-press-course-results-progress,
+	body .course-section .content-section .course-progress {
+		padding-top: 5px;
+		width: 100% !important;
+	}
+	body .course-section .content-section .items-progress {
+		width: 100% !important;
+	}
+	.custom_search {
+		display: none;
+	}
+	body header .custom-logo {
+		left: 0;
+	}
+	body .navbar-expand-lg .navbar-collapse {
+		right: 0;
+	}
+	body .courses-type {
+		height: auto;
+		position: relative;
+		top: -96px;
+		max-width: 800px;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+	.wb-bp-front-page .wp-bs-4-jumbotron {
+		max-width: 100% !important;
+		padding: 10px !important;
+		padding-bottom: 70px !important;
+	}
+	body .courses-type div {
+		padding: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+	.hentry.card .card-body {
+		padding: 2.5rem 4rem;
+	}
+	.wb-hide-mobile-sidebar .wp-bp-sidebar-width {
+		display: block;
+	}
+}
+#learn-press-profile-header .lp-profile-avatar{
+	width: 200px;
+    text-align: center;
+    left: 0;
+}
+.lp-profile-content {
+    float: right;
+    width: calc(100% - 200px) !important;
+    margin-top: -100px !important;
+    overflow: hidden;
+	position:relative;
+	z-index:999;
+}
+#profile-content-dashboard{
+	padding:30px 15px;
+}
+.lp-profile-content .profile-orders{
+	padding:15px 15px;
+}
+.lp-profile-content h3{
+	padding-top:15px !important;
+}
+.learn-press-subtab-content{
+	padding:0 15px;
+}
+.lp-label{
+	right:15px !important;
+}
+#learn-press-profile-nav .tabs > li.active > a {
+    background: #0086E7;
+    color: #fff;
+}
+#learn-press-profile-nav .tabs > li.active ul {
+    background: #ccc;
+    display: block;
+}
+
+#profile-content-settings .learn-press-form {
+    display: block !important;
+    padding: 0 15px;
+    padding-bottom: 30px;
+}
+.wp-bp-404, .profile .site-main{
+	min-height:calc(100vh - 250px);
+}
+#site-navigation{
+	max-width:1500px;
+	margin:0 auto;
+}
+.admin-bar.viewing-course-item #page{
+	    top: 30px !important;
+}
+body.course-item-popup.admin-bar.wpadminbar #learn-press-course-curriculum, body.course-item-popup.admin-bar #learn-press-content-item{
+	top:180px !important;
+}
+.play-course .purchase-course{
+	width:100%;
+}
+.learnpress-page .play-course .lp-button{
+	background: #fff;
+    color: #0086E7 !important;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+	font-size: 24px
+
+}
+.play-course .origin-price {
+    color: #f2b827;
+    font-size: 18px;
+}
+#learn-press-course .lp-course-buttons{
+	display:none;
+}
+
+
+#learn-press-checkout{
+	display:block !important;
+}
+.checkout-page{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20);
+    background: #fff;
+	margin-bottom:30px !important;
+	margin:0px;
+}
+
+#learn-press-checkout-login, #learn-press-checkout-register{
+	border:none !important;
+	margin-bottom:0px;
+}
+#learn-press-checkout-login{
+	border-right:1px solid #ddd !important;
+}
+form#learn-press-checkout:after {
+    content: '';
+    background: rgba(255,255,255,0.1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#learn-press-checkout{
+	position:relative;
+}
+.logged-in form#learn-press-checkout:after{
+	display:none;
+}
+
+.git-link{
+    position: absolute;
+    top: 515px;
+    right: 10px;
+}
+.git-link a{
+    color:#fff;
+    font-size:14px;
+}
+.git-link a i{
+    font-size:20px;
+}
+.cookie-bar-bar .ctcc-inner{
+	font-size:14px !important;
+}
+#catapult-cookie-bar a {
+    color: #fff;
+    border: 2px solid #2486E7;
+    padding: 4px 6px;
+}
+.cookie-bar-bar button#catapultCookie {
+    margin: 0 0 0 20px;
+    background: #2486E7;
+    padding: 4px 6px;
+    color: #fff;
+    border-radius: 0;
+}
+.page-id-3074 .custom-form{
+	max-width:100%;
+}
+#myBtn{
+	    cursor: pointer;
+}
+.video-section li{
+    display: inline-block;
+    float: none;
+    width: 350px;
+}
+.video-section li iframe {
+    width: auto;
+    height: auto !important;
+}
+.video-section a{
+	    position: relative;
+    height: 155px;
+    display: flex;
+}
+.video-section a .fa{
+	font-size: 46px;
+    position: absolute;
+    /* top: -21%; */
+    /* left: 50%; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 155px;
+    top: 0;
+    color: #fff;
+    opacity: 0.9;
+}
+.video-section a:hover .fa{
+	color:#0086E7;
+}
+.video-section a.btn{
+	height:auto;
+}		</style>
+		<script src="./Cours de base - FlutterLearn_files/player.js.téléchargement"></script>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Cours de base - FlutterLearn_files/translateelement.css"><style type="text/css">#st-1 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  direction: ltr;
+  display: block;
+  opacity: 1;
+  text-align: right;
+  z-index: 94034;
+}
+#st-1.st-animated {
+  -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+}
+#st-1.st-hidden {
+  opacity: 0;
+}
+#st-1.st-hide {
+  display: none;
+}
+#st-1 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+  -moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 8px;
+  padding: 0 8px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+#st-1 .st-btn:last-child {
+  margin-right: 0;
+}
+#st-1 .st-btn > svg {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  vertical-align: top;
+}
+#st-1 .st-btn > img {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 8px;
+  vertical-align: top;
+}
+#st-1 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  min-width: 60px;
+  opacity: 1;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+}
+#st-1.st-has-labels .st-btn {
+  min-width: 120px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label {
+  min-width: 50px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label > span {
+  display: none;
+}
+#st-1.st-has-labels .st-btn.st-hide-label > span {
+  display: none;
+}
+#st-1 .st-total {
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 12px;
+  margin-right: 0;
+  max-width: 80px;
+  padding: 4px 8px;
+  text-align: center;
+}
+#st-1 .st-total.st-hidden {
+  display: none;
+}
+#st-1 .st-total > span {
+  font-size: 16px;
+  line-height: 17px;
+  display: block;
+  padding: 0;
+}
+#st-1 .st-total > span.st-shares {
+  font-size: 9px;
+  line-height: 9px;
+}
+#st-1.st-justified {
+  display: flex;
+  text-align: center;
+}
+#st-1.st-justified .st-btn {
+  -moz-flex: 1;
+-ms-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+}#st-1 .st-btn:hover {
+  opacity: .8;
+  top: -4px;
+}#st-1 .st-btn[data-network='facebook'] {
+  background-color: #3B5998;
+}
+#st-1 .st-btn[data-network='facebook'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='facebook'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='twitter'] {
+  background-color: #55acee;
+}
+#st-1 .st-btn[data-network='twitter'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='twitter'] > span {
+  color: #fff;
+}
+#st-1 .st-btn[data-network='linkedin'] {
+  background-color: #0077b5;
+}
+#st-1 .st-btn[data-network='linkedin'] svg {
+  fill: #fff;
+}
+#st-1 .st-btn[data-network='linkedin'] > span {
+  color: #fff;
+}</style></head>
+
+<body data-rsssl="1" class="lp_course-template-default single single-lp_course postid-1018 logged-in wp-custom-logo flutter learnpress learnpress-page course-item-popup viewing-course-item viewing-course-item-1984 course-item-lp_lesson" data-gr-c-s-loaded="true" style="opacity: 1;">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="https://flutterlearn.com/courses/basic-course/lessons/building-views-using-listview-builder/#content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aller au contenu</font></font></a>
+
+	<header id="masthead" class="site-header ">
+		<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg ">
+							
+
+
+				<div class="site-branding-text">
+					<a href="https://flutterlearn.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="196" height="39" src="./Cours de base - FlutterLearn_files/logo.png" class="custom-logo" alt="FlutterLearn" itemprop="logo"></a>
+							                    <h2 class="site-title h3 mb-0"><a href="https://flutterlearn.com/" rel="home" class="navbar-brand mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FlutterLearn</font></font></a></h2>
+		                					<div class="search-box"><div class="custom_search" style="background-color:#FFFFFF"><p style="color:#FFFFFF;font-size:40px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chercher</font></font></p><p style="color:#FFFFFF;font-size:20px;"></p><div style="clear:both;padding:10px;"></div><div class="searchform-popup">
+            <form action="https://flutterlearn.com/" method="get" class="searchform ">
+        <fieldset>
+            <span class="text"><i class="fa fa-search"></i><input name="s" id="s" type="text" class="serachbox" value="" placeholder="Search for a topic that interests you..." autocomplete="off"></span>
+                        <span class="button-wrap"><button class="btn btn-special" style="background-color:#00AAFF;color:#FFFFFF" title="Chercher" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chercher</font></font></button></span>
+        </fieldset>
+    </form>
+        </div><div style="clear:both;padding:20px;"></div><ul class="custom_search_cat"></ul><style>.search-box{
+    height: 75px;
+width:100%;
+  }
+.custom_search{
+position:relative;
+height:75px;
+   width: 100%;
+padding:0;
+}
+.searchform {
+position: absolute;
+    top: 0;
+display:flex;
+height:75px;
+align-items: center;
+    display: flex;
+    height: 75px;
+    align-items: center;
+    /* width: 100%; */
+    /* justify-content: center; */
+    left: 10%;
+    right: 10%;
+
+}
+fieldset, .searchform-popup .text{
+width:100%;
+}
+.custom_search .searchform-popup .serachbox {
+    width: 100%;
+    height: 40px;
+    border: 0 !important;
+    border-bottom: 2px solid #05a5fd !important;
+    border-radius: 0;
+font-size:16px;
+
+}
+.custom_search .searchform-popup {
+       padding: 0 !important;
+    border-radius: 0 !important;
+}
+.custom_search .searchform-popup .btn-special{
+display:none;
+}
+.fa-search{
+color:#05a5fd;
+position:Absolute;
+right:0;
+display:flex;
+height:75px;
+align-items: center;
+top:0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(105,105,105,0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(105,105,105,0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+ color: rgba(105,105,105,0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(105,105,105,0.5);
+}
+.searchform-popup fieldset{
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.searchform-popup fieldset .fa-search{
+top:-15px;
+}</style></div>
+
+
+				</div>
+				
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-menu-wrap" aria-controls="primary-menu-wrap" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="fa fa-navicon"></span>
+				</button>
+				
+
+				<div id="primary-menu-wrap" class="collapse navbar-collapse"><ul id="primary-menu" class="navbar-nav ml-auto"><li class="nav-item   btn register menu-item menu-item-type-post_type menu-item-object-page"><a href="https://flutterlearn.com/signup/" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S'inscrire</font></font></a></li>
+<li class="nav-item   btn login btn-primary menu-item menu-item-type-post_type menu-item-object-page"><a href="https://flutterlearn.com/login/" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S'identifier</font></font></a></li>
+<a href="https://flutterlearn.com/wp-login.php?action=logout&amp;_wpnonce=7301a19e00" title="Connectez - Out" class="btn logout"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Connectez - Out</font></font></a></ul></div>					</div></nav><!-- #site-navigation -->
+
+	
+		
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+<div class="course-section" style="background-image:url(https://flutterlearn.com/wp-content/uploads/2018/09/Background.png)">
+      <div class="container">
+      <div class="content-section ">
+	  <div class="row">
+         <div class="col-sm-12 col-lg-8 flex-column pull-right">
+            <h2 class="text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cours de base</font></font></h2>
+            <p class="sm-text">This course will walk you through the complete procedure of setting up Flutter and learning the basic concepts.</p>
+            <div class="progressbar">
+                           </div>
+         </div>
+         <div class="col-sm-12 col-lg-4 flex-column rating-btn">
+		 <div class="">
+      
+        <div class=" play-course custom-btn btn">
+
+                    
+
+    <form name="purchase-course" class="purchase-course" method="post" enctype="multipart/form-data">
+
+		
+        <input type="hidden" name="purchase-course" value="1018">
+        <input type="hidden" name="purchase-course-nonce" value="aad6a4270a">
+
+        <button class="lp-button button button-purchase-course">
+       
+
+	
+		
+			
+            <span class="origin-price"><strike>$100.00</strike></span>
+
+		
+        <span class="price">$10.00</span>
+
+	
+			Buy course        </button>
+
+		
+    </form>
+
+          
+        </div>
+
+		  <!-- <a href="https://flutterlearn.com/courses/basic-course/lessons/introduction-to-flutter-the-whats-and-the-whys/"><i class="fa fa-play"></i>Play Course</a> -->
+		  
+		 </div>
+        
+                        <div class="course-rate">
+               <div class="review-stars-rated" title="5 out of 5 stars">
+    <div class="review-stars empty"></div>
+    <div class="review-stars filled" style="width:100%;"></div>
+</div>               <p class="review-number">
+                                     5.00 average based on                    1 rating                                 </p>
+               <div>
+                                    <div class="course-rate">
+                     <span>5 Star</span>
+                     <div class="review-bar">
+                        <div class="rating" style="width:100% "></div>
+                     </div>
+                     <span>100%</span>
+                  </div>
+                                    <div class="course-rate">
+                     <span>4 Star</span>
+                     <div class="review-bar">
+                        <div class="rating" style="width:0% "></div>
+                     </div>
+                     <span>0%</span>
+                  </div>
+                                    <div class="course-rate">
+                     <span>3 Star</span>
+                     <div class="review-bar">
+                        <div class="rating" style="width:0% "></div>
+                     </div>
+                     <span>0%</span>
+                  </div>
+                                    <div class="course-rate">
+                     <span>2 Star</span>
+                     <div class="review-bar">
+                        <div class="rating" style="width:0% "></div>
+                     </div>
+                     <span>0%</span>
+                  </div>
+                                    <div class="course-rate">
+                     <span>1 Star</span>
+                     <div class="review-bar">
+                        <div class="rating" style="width:0% "></div>
+                     </div>
+                     <span>0%</span>
+                  </div>
+                                 </div>
+            </div>
+			<div class=" learn-section">
+	             <div class="learn-sections">
+<h3>What I will learn</h3>
+<ul class="fa-ul ">
+<li class="fa-li fa fa-check">Basic knowledge about Flutter and its sub-parts.</li>
+<li class=" fa-li fa fa-check">Setting up your machine to be Flutter-ready.</li>
+<li class=" fa-li fa fa-check">Building blocks of a flutter application.</li>
+<li class=" fa-li fa fa-check">Developing simple UI’s in iOS and Android using Flutter.</li>
+<li class="fa-li fa fa-check">Advanced concepts &amp; techniques to refine your created application.</li>
+<li></li>
+</ul>
+</div>
+				</div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<div class="dark-gray">
+<div class="container">
+<div class="row">
+         <div class="col-md-12 wp-bp-content-width">
+                  <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+               
+<article id="post-1018" class=" mt-3r post-1018 lp_course type-lp_course status-publish hentry course">
+	<div class="">
+		<!-- <header class="entry-header">
+					</header>.entry-header -->
+
+		
+		<div class="entry-content">
+			
+
+
+
+
+<div id="lp-single-course" class="lp-single-course ">
+<div class="row">
+ <div class="col-lg-8">
+	
+	
+<nav class="learn-press-breadcrumb" itemprop="breadcrumb"><a href="https://flutterlearn.com/">Home</a>&nbsp;/&nbsp;Basic Course</nav>
+<div id="learn-press-course" class="course-summary">
+	
+<div class="container learn-press-content-item">
+
+</div></div>
+
+</div>
+</div>
+</div>		</div><!-- .entry-content -->
+	</div>
+	<!-- /.card-body -->
+
+	</article><!-- #post-1018 -->
+                        
+                               
+
+                  <script>
+                      
+                      var iframe = document.querySelector('iframe');
+                      var player = new Vimeo.Player(iframe);
+                      var next_path = "https://flutterlearn.com/courses/basic-course/lessons/inkwell-and-its-importance/";
+                      //console.log("Next",next_path);
+                      player.on('ended', function() {
+                          //console.log("ended",next_path);
+                          if(next_path != ''){
+                            window.location = next_path;
+                          }
+                      });
+                  </script>
+            </main>
+            <!-- #main -->
+         </div>
+         <!-- #primary -->
+      </div>
+      <!-- /.col-md-8 -->
+	 
+   </div>
+   </div>
+   <!-- /.row -->
+</div>
+</div>
+<!-- /.container -->
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer text-center text-muted ">
+
+		<section class="footer-widgets text-left">
+			<div class="container">
+				<div class="row">
+					
+					
+					
+									</div>
+				<!-- /.row -->
+			</div>
+		</section>
+
+		<div class="container">
+			<!-- <div class="site-info">
+				<a href="https://bootstrap-wp.com/">Bootstrap 4 WordPress Theme</a>
+				<span class="sep"> | </span>
+				Theme Name: WP Bootstrap 4.			</div>.site-info -->
+						<div class="row footer">
+			<div class="col-sm-6" style="text-decoration: none;color: #696969; font-size:16px;text-align:left">
+		 <a target="_blank" href="https://geekyants.com/" style="text-decoration: none; color: #696969;">
+		<img src="./Cours de base - FlutterLearn_files/footer-logo.png" alt="geekyants" height="20px" style="padding-right: 5px; height:20px;"></a>© All Rights Reserved by
+	</div>
+		
+		<div class="col-sm-6 float-right"><a href="https://geekyants.com/terms" target="_blank" class="float-right " style="text-decoration: none; color: #696969 !important;font-size:16px;margin-left:30px;"> Terms and Conditions</a>
+			<div class="float-right " style="text-decoration: none; color: #696969 !important;font-size:16px;" id="myBtn"> Feedback</div>
+				</div>
+		</div>
+		</div>
+		<div class="modal" id="feedback">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+					  <h3 class="text-grey">Send us your feedback! </h3>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  <div role="form" class="wpcf7" id="wpcf7-f343-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"></div>
+<form action="https://flutterlearn.com/courses/basic-course/lessons/building-views-using-listview-builder/#wpcf7-f343-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="343">
+<input type="hidden" name="_wpcf7_version" value="5.0.4">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f343-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+</div>
+<p style="margin-bottom:30px"> Do you have any suggestion or found some bug?<br>Let us know in the field below</p>
+<p><label><span class="text-right"> Name*</span><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label><span class="text-right"> E-mail address*</span><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label></p>
+<p><label class="textbox"><span class="text-right"> Message*</span><span class="wpcf7-form-control-wrap textarea"><textarea name="textarea" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea></span> </label></p>
+<div class="wpcf7-form-control-wrap"><div data-sitekey="6LeTBnQUAAAAAJ9OVD-0dlWiq5kx4Z5ZXG6qh1mz" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha" id="414700558909119"><div style="width: 304px; height: 78px;"><div><iframe src="./Cours de base - FlutterLearn_files/anchor.html" width="304" height="78" role="presentation" name="a-mnzwyl3hox3a" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+<noscript>
+	<div style="width: 302px; height: 422px;">
+		<div style="width: 302px; height: 422px; position: relative;">
+			<div style="width: 302px; height: 422px; position: absolute;">
+				<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LeTBnQUAAAAAJ9OVD-0dlWiq5kx4Z5ZXG6qh1mz" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;">
+				</iframe>
+			</div>
+			<div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+				<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;">
+				</textarea>
+			</div>
+		</div>
+	</div>
+</noscript>
+</div>
+<p><label class=" submit-btn"><span><input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></span></label></p>
+<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                  </div>
+
+                  <!-- Modal footer -->
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+		<!-- /.container -->
+	</footer><!-- #colophon -->
+<!-- #page -->
+<iframe src="./Cours de base - FlutterLearn_files/portal.html" id="st_gdpr_iframe" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><script>
+jQuery(window).load(function(){
+	jQuery("#myBtn").click(function(){
+		jQuery("#feedback").modal();
+	});
+	jQuery('#primary-menu-wrap ul').append(jQuery('.logout'));
+	jQuery(' .content-item-description').append(jQuery('.git-link'))
+
+
+});
+
+</script>
+<script type="text/javascript">
+var recaptchaWidgets = [];
+var recaptchaCallback = function() {
+	var forms = document.getElementsByTagName( 'form' );
+	var pattern = /(^|\s)g-recaptcha(\s|$)/;
+
+	for ( var i = 0; i < forms.length; i++ ) {
+		var divs = forms[ i ].getElementsByTagName( 'div' );
+
+		for ( var j = 0; j < divs.length; j++ ) {
+			var sitekey = divs[ j ].getAttribute( 'data-sitekey' );
+
+			if ( divs[ j ].className && divs[ j ].className.match( pattern ) && sitekey ) {
+				var params = {
+					'sitekey': sitekey,
+					'type': divs[ j ].getAttribute( 'data-type' ),
+					'size': divs[ j ].getAttribute( 'data-size' ),
+					'theme': divs[ j ].getAttribute( 'data-theme' ),
+					'badge': divs[ j ].getAttribute( 'data-badge' ),
+					'tabindex': divs[ j ].getAttribute( 'data-tabindex' )
+				};
+
+				var callback = divs[ j ].getAttribute( 'data-callback' );
+
+				if ( callback && 'function' == typeof window[ callback ] ) {
+					params[ 'callback' ] = window[ callback ];
+				}
+
+				var expired_callback = divs[ j ].getAttribute( 'data-expired-callback' );
+
+				if ( expired_callback && 'function' == typeof window[ expired_callback ] ) {
+					params[ 'expired-callback' ] = window[ expired_callback ];
+				}
+
+				var widget_id = grecaptcha.render( divs[ j ], params );
+				recaptchaWidgets.push( widget_id );
+				break;
+			}
+		}
+	}
+};
+
+document.addEventListener( 'wpcf7submit', function( event ) {
+	switch ( event.detail.status ) {
+		case 'spam':
+		case 'mail_sent':
+		case 'mail_failed':
+			for ( var i = 0; i < recaptchaWidgets.length; i++ ) {
+				grecaptcha.reset( recaptchaWidgets[ i ] );
+			}
+	}
+}, false );
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/flutterlearn.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/scripts.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/comment-reply.min.js.téléchargement"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ctcc_vars = {"expiry":"30","method":"1","version":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/uk-cookie-consent-js.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/jscolor.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/bootstrap.js.téléchargement"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var learn_press_course_review = {"localize":{"empty_title":"Please enter the review title","empty_content":"Please enter the review content","empty_rating":"Please select your rating"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/course-review.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/wp-embed.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Cours de base - FlutterLearn_files/api.js.téléchargement"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var lpGlobalSettings = {"url":"https:\/\/flutterlearn.com\/courses\/basic-course\/lessons\/building-views-using-listview-builder\/","siteurl":"https:\/\/flutterlearn.com","ajax":"https:\/\/flutterlearn.com\/wp-admin\/admin-ajax.php","theme":"flutter","localize":{"button_ok":"OK","button_cancel":"Cancel","button_yes":"Yes","button_no":"No"}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var lpCheckoutSettings = {"ajaxurl":"https:\/\/flutterlearn.com","user_waiting_payment":null,"user_checkout":"ldamaro94@gmail.com","i18n_processing":"Processing","i18n_redirecting":"Redirecting","i18n_invalid_field":"Invalid field","i18n_unknown_error":"Unknown error","i18n_place_order":"Place order"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var lpProfileUserSettings = {"processing":"Processing","redirecting":"Redirecting","avatar_size":{"width":200,"height":200}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var lpCourseSettings = [""];
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var lpQuizSettings = [];
+/* ]]> */
+</script>
+			
+				<script type="text/javascript">
+					jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-bottom-bar");
+							$("html").addClass("cookie-bar-bar");
+													}
+																	});
+				</script>
+			
+			<div id="catapult-cookie-bar" class=""><div class="ctcc-inner "><span class="ctcc-left-side"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nous utilisons nos propres cookies et ceux de tiers, ainsi que d'autres technologies de suivi. En continuant de naviguer sur le site, vous acceptez notre utilisation des cookies et des technologies de suivi. </font></font><a class="ctcc-more-info-link" tabindex="0" target="_blank" href="https://flutterlearn.com/cookie-policy/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apprendre encore plus</font></font></a></span><span class="ctcc-right-side"><button id="catapultCookie" tabindex="0" onclick="catapultAcceptCookies();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acceptez</font></font></button></span></div><!-- custom wrapper class --></div><!-- #catapult-cookie-bar -->
+
+
+
+<div id="learn-press-content-item">
+
+	
+<div id="course-item-content-header">
+
+    <div class="course-item-search">
+        <form>
+            <input type="text" placeholder="Search in topics">
+            <button type="button"></button>
+        </form>
+    </div>
+
+    <h2 class="course-title">
+        <a href="https://flutterlearn.com/courses/basic-course/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cours de base</font></font></a>
+    </h2>
+
+    <a class="toggle-content-item" href="https://flutterlearn.com/courses/basic-course/lessons/building-views-using-listview-builder/"></a>
+
+    <form class="lp-form form-button lp-button-back" method="post" action="https://flutterlearn.com/courses/basic-course/">
+        <button class="lp-button button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Retour aux cours</font></font></button>
+    </form>
+
+</div>
+
+    <div class="scroll-wrapper content-item-scrollable scrollbar-light" style="position: absolute; top: 0px; bottom: 0px; width: 100%; opacity: 1;"><div class="content-item-scrollable scrollbar-light scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; opacity: 1; max-height: 767px;">
+
+
+        <div class="content-item-wrap">
+
+			
+
+<div class="content-item-summary">
+
+	
+<h3 class="course-item-title question-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Construction de vues à l'aide de ListView.builder.</font></font></h3>
+<div class="content-item-description lesson-description">
+
+          
+<p><iframe src="./Cours de base - FlutterLearn_files/314732497.html" width="100%" height="500" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe></p>
+<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Liste de construction en utilisant ListView.builder.</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le traitement d'une longue liste d'éléments peut être encore plus difficile avec la pagination et tout le reste. </font><font style="vertical-align: inherit;">Flutter prend son envol avec son ListView.builder. </font><font style="vertical-align: inherit;">Ici, nous présentons et expliquons comment vous pouvez implémenter une vue de liste transparente des éléments.</font></font></p>
+
+</div>
+</div>
+
+<div class="course-item-nav">
+	        <div class="prev">
+        <a href="https://flutterlearn.com/courses/basic-course/lessons/listview-and-listtile/" class="btn-default btn">
+            <span><i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </span>
+           
+				            </a>
+        </div>
+	
+	        <div class="next">
+        <a href="https://flutterlearn.com/courses/basic-course/lessons/inkwell-and-its-importance/" class="btn-default btn">
+            <span><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </span>
+         
+				            </a>
+        </div>
+	</div>
+
+
+
+<div id="comments" class="comments-area">
+
+	
+			<div class="wb-comment-form">
+								  
+					<div class="share-conatiner unenrolled"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+						Seuls les membres inscrits peuvent poser des questions!						</font></font><div class="share"><div class="sharethis-inline-share-buttons st-right  st-inline-share-buttons st-animated" id="st-1"><div class="st-btn st-first  st-remove-label" data-network="facebook" style="display: inline-block;">
+  <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+  <g>
+    <path d="m21.7 16.7h5v5h-5v11.6h-5v-11.6h-5v-5h5v-2.1c0-2 0.6-4.5 1.8-5.9 1.3-1.3 2.8-2 4.7-2h3.5v5h-3.5c-0.9 0-1.5 0.6-1.5 1.5v3.5z"></path>
+  </g>
+</svg>
+  
+</div><div class="st-btn  st-remove-label" data-network="twitter" style="display: inline-block;">
+  <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+  <g>
+    <path d="m31.5 11.7c1.3-0.8 2.2-2 2.7-3.4-1.4 0.7-2.7 1.2-4 1.4-1.1-1.2-2.6-1.9-4.4-1.9-1.7 0-3.2 0.6-4.4 1.8-1.2 1.2-1.8 2.7-1.8 4.4 0 0.5 0.1 0.9 0.2 1.3-5.1-0.1-9.4-2.3-12.7-6.4-0.6 1-0.9 2.1-0.9 3.1 0 2.2 1 3.9 2.8 5.2-1.1-0.1-2-0.4-2.8-0.8 0 1.5 0.5 2.8 1.4 4 0.9 1.1 2.1 1.8 3.5 2.1-0.5 0.1-1 0.2-1.6 0.2-0.5 0-0.9 0-1.1-0.1 0.4 1.2 1.1 2.3 2.1 3 1.1 0.8 2.3 1.2 3.6 1.3-2.2 1.7-4.7 2.6-7.6 2.6-0.7 0-1.2 0-1.5-0.1 2.8 1.9 6 2.8 9.5 2.8 3.5 0 6.7-0.9 9.4-2.7 2.8-1.8 4.8-4.1 6.1-6.7 1.3-2.6 1.9-5.3 1.9-8.1v-0.8c1.3-0.9 2.3-2 3.1-3.2-1.1 0.5-2.3 0.8-3.5 1z"></path>
+  </g>
+</svg>
+  
+</div><div class="st-btn st-last  st-remove-label" data-network="linkedin" style="display: none;">
+  <svg fill="#fff" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" viewBox="0 0 40 40">
+  <g>
+    <path d="m13.3 31.7h-5v-16.7h5v16.7z m18.4 0h-5v-8.9c0-2.4-0.9-3.5-2.5-3.5-1.3 0-2.1 0.6-2.5 1.9v10.5h-5s0-15 0-16.7h3.9l0.3 3.3h0.1c1-1.6 2.7-2.8 4.9-2.8 1.7 0 3.1 0.5 4.2 1.7 1 1.2 1.6 2.8 1.6 5.1v9.4z m-18.3-20.9c0 1.4-1.1 2.5-2.6 2.5s-2.5-1.1-2.5-2.5 1.1-2.5 2.5-2.5 2.6 1.2 2.6 2.5z"></path>
+  </g>
+</svg>
+  
+</div></div></div>
+					</div>
+							</div>
+	
+</div><!-- #comments -->
+
+        </div>
+
+    </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 674px; top: 0px;"></div></div></div></div>
+
+	
+<div id="course-item-content-footer">
+
+	
+</div>
+</div><div class="course-curriculum" id="learn-press-course-curriculum">
+
+    <div class="scroll-wrapper curriculum-scrollable scrollbar-light" style="position: absolute; top: 0px; bottom: 0px; width: 100%; opacity: 1;"><div class="curriculum-scrollable scrollbar-light scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; opacity: 1; max-height: 768px;">
+
+		
+		
+            <ul class="curriculum-sections">
+				
+<li class="section" id="section-introduction-10" data-id="introduction-10" data-section-id="10">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">introduction</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1297 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/introduction-to-flutter-the-whats-and-the-whys/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Introduction à Flutter - Le quoi et le pourquoi</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-introduction-to-dart-11" data-id="introduction-to-dart-11" data-section-id="11">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Introduction à la fléchette</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1024 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/dart-is-cool-background-heavily-used-at-google-brief-of-wms-why-flutter-uses-dart-blog/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Raison pour laquelle Dart tient le fort fort.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1025 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/installing-vs-code-for-dart-for-both-macos-and-windows/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Installation de Visual Studio Code et du plugin Dart</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1027 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/installing-dart-sdk/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Installation de Dart SDK</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1028 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/hello-dart-hello-world-program-in-dart-a-couple-of-other-basic-ones/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Écrire le premier programme de fléchettes</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-setting-up-flutter-12" data-id="setting-up-flutter-12" data-section-id="12">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mise en place de flutter</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1035 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/downloading-cloning-the-flutter-sdk-cover-what-is-an-sdk-as-well/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Téléchargement / clonage du SDK Flutter.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1036 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/installing-the-flutter-plugin-from-vs-code/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Installation de Flutter Plugin dans VS Code.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1037 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/flutter-project-structure-ios-android-lib-test-assets-external-libraries/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comprendre la structure d'un projet Flutter.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1038 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/flutter-from-scratch-literally-delete-all-default-code-explain-runapp-and-text/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Construire une application simple à partir de zéro.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-introducing-widget-13" data-id="introducing-widget-13" data-section-id="13">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Présentation du widget</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1040 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/what-is-a-widget/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Les widgets et leur rôle dans une application Flutter.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1041 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/materialapp/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le widget MaterialApp et Scaffold.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1042 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/scaffold-appbar-floatingactionbutton/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AppBar</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-2760 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/floatingactionbutton/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FloatingActionButton.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1043 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/text-center-padding/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Plus de widgets - Texte, Centre et Rembourrage.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1044 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/hot-reload-and-hot-restart-show-that-hot-reload-works-in-an-error-state-as-well/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hot Reload et Hot Restart, les astuces du métier.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1045 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/recreating-the-default-app-part-1-ui-only/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recréation de l'application Flutter par défaut (interface utilisateur uniquement).</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-common-widgets-in-flutter-16" data-id="common-widgets-in-flutter-16" data-section-id="16">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Widgets communs dans Flutter</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1978 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/containers-and-their-role/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Les conteneurs et leur rôle.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1979 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/importing-images-from-a-network-image-network-network-image/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Importation d'images d'un réseau.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1980 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/importing-images-as-assets/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Importation d'images en tant qu'actifs.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1981 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/adding-icons-to-widgets/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ajout d'icônes aux widgets.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1982 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/understanding-row-and-column/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comprendre la ligne et la colonne.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1983 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/listview-and-listtile/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ListView et ListTile.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1984 course-item-type-video current item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/building-views-using-listview-builder/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Construction de vues à l'aide de ListView.builder.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1986 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/inkwell-and-its-importance/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encrier et son importance.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-stateless-and-stateful-widgets-the-concept-17" data-id="stateless-and-stateful-widgets-the-concept-17" data-section-id="17">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Widgets sans état et avec état - Le concept</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1321 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/stateless-vs-stateful-widgets/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Widgets sans état ou avec état.</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1322 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/defining-a-state/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Définir un "Etat".</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1323 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/the-setstate-method/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La méthode setState ().</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1324 course-item-type-video item-preview has-status">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/returning-to-the-default-flutter-app-fab-interaction/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Retour à l'application Flutter par défaut</font></font></span>
+<div class="course-item-meta">
+
+						            <i class="item-meta course-item-status" data-preview="Play"></i>
+			
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-navigating-through-navigation-18" data-id="navigating-through-navigation-18" data-section-id="18">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Navigation dans la navigation</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1325 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/navigator-and-routes/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Navigateur et itinéraires.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1326 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/applying-push-using-materialpageroute/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Application de push () à l'aide de MaterialPageRoute</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1327 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/applying-pop/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Appliquer pop ()</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1328 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/declaring-parameter-less-routes-pushnamed-routes-in-materialapp-widget/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Déclaration d'itinéraires sans paramètre (pushNamed ()) dans le widget MaterialApp.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-handling-user-input-19" data-id="handling-user-input-19" data-section-id="19">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Traitement des entrées utilisateur</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1329 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/using-textfield/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utiliser TextField.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1330 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/handling-changes-to-a-textfield/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gestion des modifications dans un TextField.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1331 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/pass-retrieved-values-using-navigator/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Transmettez les valeurs récupérées à l'aide de Navigator.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-user-interface-20" data-id="user-interface-20" data-section-id="20">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Interface utilisateur</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1332 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/applying-themedata/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Appliquer ThemeData.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1333 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/the-basic-screen-layout/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La disposition d'écran de base.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1334 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/applying-custom-fonts/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Application de polices personnalisées.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-asynchronous-functions-24" data-id="asynchronous-functions-24" data-section-id="24">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fonctions asynchrones</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1347 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/the-future-function-async-and-await/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La fonction 'Future'.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1349 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/async-and-await/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'async' et 'wait'</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-working-with-remote-data-21" data-id="working-with-remote-data-21" data-section-id="21">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Travailler avec des données distantes</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1336 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/the-http-package/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le paquet 'http'.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1337 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/using-model-class/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Classe de modèle et analyse JSON.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1339 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/displaying-remote-data-news-api/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Affichage des données distantes. </font><font style="vertical-align: inherit;">(API NEWS)</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-using-3rd-party-packages-22" data-id="using-3rd-party-packages-22" data-section-id="22">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utilisation de packages tiers</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1340 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/the-url_launcher-package/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Le paquet 'url_launcher'.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1341 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/adding-ontap-to-news-api/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ajout de onTap () à l'API NEWS.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>
+<li class="section" id="section-other-useful-widgets-23" data-id="other-useful-widgets-23" data-section-id="23">
+
+	
+<div class="section-header">
+
+    <div class="section-left">
+
+		            <h5 class="section-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Autres widgets utiles</font></font></h5>
+		
+		
+    </div>
+
+	
+</div>
+
+
+    <ul class="section-content">
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1342 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/count/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GridView</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1343 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/the-hero-animation/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">L'animation "héros".</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1345 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/stack/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empiler</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+            <li class="course-item course-item-lp_lesson course-item-1346 course-item-type-video item-locked">
+				                        <a class="section-item-link" href="https://flutterlearn.com/courses/basic-course/lessons/alertdialog-with-buttons/">
+							
+<span class="item-name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"AlertDialog" avec des boutons.</font></font></span>
+<div class="course-item-meta">
+
+		        <i class="fa item-meta course-item-status trans"></i>
+	
+	</div>
+                        </a>
+					
+					
+            </li>
+
+		
+    </ul>
+
+
+</li>            </ul>
+
+		
+		
+    </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 182px; top: 344.087px;"></div></div></div></div>
+
+</div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Cours de base - FlutterLearn_files/translate_24dp.png" width="20" height="20" alt="Google Traduction"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texte d'origine</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Proposer une meilleure traduction</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="Test recaptcha" src="./Cours de base - FlutterLearn_files/bframe.html" name="c-mnzwyl3hox3a" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
