@@ -1,5 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:bnb_mobile/Models/Location.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 class Todo {
+  var unparsedJson;
   int id;
   var  title;
   var author;
@@ -13,7 +17,7 @@ class Todo {
   var  owner; 
   var  phone; 
   var  year_built;
-  var ma_locaion;
+  var map_location;
   var address; 
   var gallery = [];
 
@@ -30,7 +34,7 @@ class Todo {
   var amenity;
   
       Todo(var data){
-      
+      this.unparsedJson = data;
       this.title = data['title'];
       this.year_built = data['year_built'];
       this.id = data['id'];
@@ -42,14 +46,19 @@ class Todo {
       this.contract = data['contract']; 
       this.content = data['content'];
       this.ref = data['ref']; 
-      this.owner = data['owner']; 
-      this.ma_locaion = data["ma_location"];
+      this.owner = data['owner'];
+      //Fetching Map Location
+      Map<String, dynamic> loc = data["map_location"];
+      try{
+        this.map_location = LatLng(double.parse(loc["latitude"]), double.parse(loc["longitude"]));
+      }catch(e){
+        this.map_location = LatLng(38.2836106, 10.4396702);
+      }
+      //Fetching Gallery
       for(var i=0; i< data['gallery'].length; i++)
       {
         this.gallery.add(data['gallery'][i]);
       }
-      
-
       this.rooms  = data['rooms'];
       this.beds = data['beds'];
       this.baths  = data['baths'];

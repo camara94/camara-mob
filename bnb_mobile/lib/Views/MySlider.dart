@@ -27,9 +27,9 @@ class _MySlider extends State<MySlider> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
             Container(
-            height: 500.0,
-            child: Text("Slider Here"),
-            /*child: Carousel(
+            height: 450.0,
+//            child: Text("Slider Here"),
+            child: Carousel(
               boxFit: BoxFit.cover,
               images: generatePics(),
               autoplay: true,
@@ -37,47 +37,56 @@ class _MySlider extends State<MySlider> {
               animationDuration: Duration(milliseconds: 3000),
               dotSize: 5.0,
               indicatorBgPadding: 2.0,
-            ),*/
+            ),
           ),
 
          
-          Divider(),
-          Row(
-            children: <Widget>[
-              IconButton(
-                padding: EdgeInsets.only(left: 100),
-                icon:Icon(
-                  Icons.location_on,size:60,
-                  color: Colors.blue[500],
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                       builder: (context) => Carte(),
+//          Divider(),
+          Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisSize: MainAxisSize.max,
+              children: <Widget>[
+                SizedBox(
+                  width: 100,
+                  child: IconButton(
+  //                padding: EdgeInsets.only(left: 100),
+                    icon:Icon(
+                      Icons.location_on,size:60,
+                      color: Colors.blue[500],
                     ),
-                  );
-                },
-              ),
-              
-              IconButton(
-                padding: EdgeInsets.only(left: 60),
-                icon:Icon(
-                  Icons.mail,size:60,
-                  color: Colors.blue[500],
+                    onPressed: () {
+                      openCarte(context);
+                    },
+                  ),
                 ),
-                onPressed:_launchmailer,
-              ),
-              IconButton(
-                padding: EdgeInsets.only(left: 60),
-                icon:Icon(
-                  Icons.call,size:60,
-                  color: Colors.blue[500],
+
+                SizedBox(
+                  width: 100,
+                  child: IconButton(
+  //                  padding: EdgeInsets.only(left: 60),
+                    icon:Icon(
+                      Icons.mail,size:60,
+                      color: Colors.blue[500],
+                    ),
+                    onPressed:_launchmailer,
+                  ),
                 ),
-                onPressed:_launchcaller,
-              ),
-            ],
-          ),
+
+                SizedBox(
+                    width: 100,
+                    child: IconButton(
+//                  padding: EdgeInsets.only(left: 60),
+                  icon:Icon(
+                    Icons.call,size:60,
+                    color: Colors.blue[500],
+                  ),
+                  onPressed:_launchcaller,
+                ),
+                ),
+              ],
+            ),
+          )
           
         ],
       ),
@@ -121,11 +130,22 @@ class _MySlider extends State<MySlider> {
   }
 
 
+
   generatePics(){
-    var ls = [];
-    widget.data.gallery.forEach((str){
-      ls.add(CachedNetworkImageProvider(str));//Cette fonction va cacher l'imgae, et puis, meme si tu redemarrer votre portable, L'image va ertre charger apartir de cache la prochaine fois :D
-    });
-    return ls;
-}
+      var ls = [];
+      widget.data.gallery.forEach((str){
+        ls.add(CachedNetworkImageProvider(str));//Cette fonction va cacher l'imgae, et puis, meme si tu redemarrer votre portable, L'image va ertre charger apartir de cache la prochaine fois :D
+      });
+      return ls;
+  }
+
+  openCarte(context){
+//    print(widget.data.unparsedJson);
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => Carte(latlng: widget.data.map_location, ),
+      ),
+    );
+  }
 }

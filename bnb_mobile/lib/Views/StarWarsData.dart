@@ -35,7 +35,7 @@ class StarWarsDataState extends State<StarWarsData> {
       appBar: AppBar(
         title: Text("Bnb Tunisie"),
         backgroundColor: Colors.lightBlue,
-        leading: Icon(Icons.menu,color: Colors.white,),
+        leading: Icon(Icons.home,color: Colors.white,),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.lightBlue,
@@ -47,84 +47,7 @@ class StarWarsDataState extends State<StarWarsData> {
           });
         },
       ),
-      body:ListView.builder(
-        itemCount: data == null ? 0 : data.length,
-        itemBuilder: (BuildContext context, int index){
-          return Column(
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(6.0, 3.0, 6.0, 3.0),
-                          child:Image.network(data[index]['featured_image'],),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(1.0),
-                         child: Container(
-                           alignment: Alignment(0, 0),
-                           width: 210,
-                           child:Text(data[index]['title']+'\n\n'+data[index]['price'] +' '+ 'DT\n\n'+data[index]['location'],),
-                         ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: IconButton(
-                            icon: Icon(Icons.chevron_right,color:Colors.grey,size:50.0),
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => MySlider(data: Todo(data[index]) ),
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              Divider(
-                height: 2.0,
-                color: Colors.grey,
-              )
-            ],
-          );
-          
-          
-          
-          /*ListTile(
-            leading: Container(
-              child: Image.network(data[index]['featured_image'],),
-              width: 80,
-              height: 80,flu
-            ),
-            title: Text(data[index]['title']),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                   
-                  builder: (context) => Detail(data: Todo(data[index]) ),
-                ),
-              ); 
-            },
-          );*/
-        },
-        
-      ) ,
+      body: myList()
       
     );
   }
@@ -134,4 +57,78 @@ class StarWarsDataState extends State<StarWarsData> {
       super.initState();
       this.getAnnonces(pages);
     }
+
+  myList(){
+    if(data == null){
+      return Center(
+        child: CircularProgressIndicator(),
+      );
+    }
+    return ListView.builder(
+      itemCount: data == null ? 0 : data.length,
+      itemBuilder: (BuildContext context, int index){
+        return Column(
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(6.0, 3.0, 6.0, 3.0),
+                      child:Image.network(data[index]['featured_image'],),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(1.0),
+                        child: Container(
+                          alignment: Alignment(0, 0),
+                          width: 180,
+//                           child:Text(data[index]['title']+'\n\n'+data[index]['price'] +' '+ 'DT\n\n'+data[index]['location'],),
+                          child:Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text(data[index]['title'], style: TextStyle(fontWeight: FontWeight.bold,),maxLines: 2,textAlign: TextAlign.left,),
+                              Text(data[index]['price'], style: TextStyle(fontWeight: FontWeight.bold, color: Colors.lightBlue),textAlign: TextAlign.left,),
+                              Text(data[index]['location'], style: TextStyle(color: Colors.grey),textAlign: TextAlign.right,),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: IconButton(
+                          icon: Icon(Icons.chevron_right,color:Colors.grey,size:50.0),
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => MySlider(data: Todo(data[index]) ),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Divider(
+              height: 2.0,
+              color: Colors.grey,
+            )
+          ],
+        );
+      },
+
+    );
+  }
 }

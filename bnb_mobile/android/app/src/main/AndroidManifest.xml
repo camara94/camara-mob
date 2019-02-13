@@ -19,6 +19,9 @@
         android:label="bnb_mobile"
         android:icon="@mipmap/ic_launcher">
 
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBjwNzG3WRTn5KHkoOt3rfIjbrH_5mlDZ8"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
